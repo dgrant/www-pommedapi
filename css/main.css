@@ -1,0 +1,15 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  background     : #c40807 url(img/body_bg.jpg) repeat top left;
+  width          : 100%;
+  height         : 100%;
+}
+
+.container {
+  background     : #FFFFFF;
+}
