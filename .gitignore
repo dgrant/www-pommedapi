@@ -2,3 +2,4 @@
 env
 env.bak
 pommedapi/pommedapi/local_settings.py
+pommedapi/media

@@ -124,10 +124,6 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_PATH, 'templates')
 )
 
-CMS_TEMPLATES = (
-    ('template_1.html', 'Template One'),
-    ('template_2.html', 'Template Two'),
-)
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -145,6 +141,20 @@ INSTALLED_APPS = (
     'sekizai',
     'filer',
     'reversion',
+    'easy_thumbnails',
+
+    'cmsplugin_filer_file',
+    'cmsplugin_filer_folder',
+    'cmsplugin_filer_image',
+    'cmsplugin_filer_teaser',
+    'cmsplugin_filer_video',
+
+    'cms.plugins.flash',
+    'cms.plugins.googlemap',
+    'cms.plugins.link',
+    'cms.plugins.snippet',
+    'cms.plugins.text',
+    'cms.plugins.twitter',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -178,5 +188,12 @@ LOGGING = {
 
 
 LANGUAGES = [
-    ('en', 'English'),
+    ('en', gettext('English')),
+    ('fr', gettext('Francais')),
 ]
+
+CMS_TEMPLATES = (
+    ('template_1.html', 'Template One'),
+    ('template_2.html', 'Template Two'),
+)
+
