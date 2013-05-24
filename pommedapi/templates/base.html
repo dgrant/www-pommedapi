@@ -1,5 +1,6 @@
 {% load cms_tags sekizai_tags %}
 {% load staticfiles %}
+{% load menu_tags %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -35,20 +36,7 @@
 
       <div class="row">
         <div class="span3">
-          <div class="sidebar-nav">
-            <ul class="nav nav-list">
-		      <li class="nav-header">Main menu</li>
-		      <li class="active"><a href="#">Home</a></li>
-		      <li><a href="#">About Us</a></li>
-		      <li><a href="#">Our Teachers</a></li>
-		      <li><a href="#">Programs</a></li>
-		      <li><a href="#">Registration & Fees</a></li>
-		      <li><a href="#">Governance</a></li>
-		      <li><a href="#">Parent Participation</a></li>
-		      <li><a href="#">Contact Us</a></li>
-		      <li><a href="#">Find Us</a></li>
-		    </ul>
-		  </div><!--/sidebar-nav -->
+          {% show_menu %}
 		</div><!--/span-->
 
         <div class="span9">
