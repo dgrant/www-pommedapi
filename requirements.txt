@@ -1,0 +1,9 @@
+Django==1.5.1
+django-cms==2.4.1
+psycopg2==2.5
+South==0.8
+flup==1.0.3.dev-20110405
+PIL==1.1.7
+django-filer==0.9.4
+cmsplugin-filer==0.9.5
+django-reversion==1.7
