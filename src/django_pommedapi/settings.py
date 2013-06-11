@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 gettext = lambda s: s
+# PROJECT_PATH is set to one level above this file
 PROJECT_PATH = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
 
 from local_settings import *
@@ -114,10 +115,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'pommedapi.urls'
+ROOT_URLCONF = 'django_pommedapi.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'pommedapi.wsgi.application'
+WSGI_APPLICATION = 'django_pommedapi.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
