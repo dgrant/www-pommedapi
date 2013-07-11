@@ -142,22 +142,27 @@ INSTALLED_APPS = (
     'menus',
     'south',
     'sekizai',
-    'filer',
     'reversion',
     'easy_thumbnails',
-
-    'cmsplugin_filer_file',
-    'cmsplugin_filer_folder',
-    'cmsplugin_filer_image',
-    'cmsplugin_filer_teaser',
-    'cmsplugin_filer_video',
-
     'cms.plugins.flash',
     'cms.plugins.googlemap',
     'cms.plugins.link',
     'cms.plugins.snippet',
     'cms.plugins.text',
     'cms.plugins.twitter',
+
+    'filer',
+    'cmsplugin_filer_file',
+    'cmsplugin_filer_folder',
+    'cmsplugin_filer_image',
+    'cmsplugin_filer_teaser',
+    'cmsplugin_filer_video',
+    
+    # default equivalents
+    'cms.plugins.file',
+    'cms.plugins.picture',
+    'cms.plugins.teaser',
+    'cms.plugins.video',
 
     'debug_toolbar',
 )
@@ -214,4 +219,14 @@ DEBUG_TOOLBAR_PANELS = (
         'debug_toolbar.panels.sql.SQLDebugPanel',
         'debug_toolbar.panels.signals.SignalDebugPanel',
         'debug_toolbar.panels.logger.LoggingPanel',
+)
+
+DEBUG_TOOLBAR_CONFIG = {'INTERCEPT_REDIRECTS': False}
+
+THUMBNAIL_PROCESSORS = (
+        'easy_thumbnails.processors.colorspace',
+        'easy_thumbnails.processors.autocrop',
+        #'easy_thumbnails.processors.scale_and_crop',
+        'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+        'easy_thumbnails.processors.filters',
 )
