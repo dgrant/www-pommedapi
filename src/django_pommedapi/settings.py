@@ -159,10 +159,10 @@ INSTALLED_APPS = (
     'cmsplugin_filer_video',
     
     # default equivalents
-    'cms.plugins.file',
-    'cms.plugins.picture',
-    'cms.plugins.teaser',
-    'cms.plugins.video',
+#    'cms.plugins.file',
+#    'cms.plugins.picture',
+#    'cms.plugins.teaser',
+#    'cms.plugins.video',
 
     'debug_toolbar',
 )
@@ -203,8 +203,9 @@ LANGUAGES = [
 ]
 
 CMS_TEMPLATES = (
-    ('basic_page.html', 'Basic Page'),
+    ('basic_page.html', gettext('default')),
 )
+CMS_PERMISSION = True
 
 
 INTERNAL_IPS = ('127.0.0.1', '192.168.1.10', '192.168.1.2',)
@@ -230,3 +231,4 @@ THUMBNAIL_PROCESSORS = (
         'filer.thumbnail_processors.scale_and_crop_with_subject_location',
         'easy_thumbnails.processors.filters',
 )
+
