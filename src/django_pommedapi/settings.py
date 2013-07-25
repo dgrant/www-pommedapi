@@ -151,6 +151,9 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.twitter',
 
+    'cmsplugin_contact',
+    'cmsplugin_custom_contact',
+
     'filer',
     'cmsplugin_filer_file',
     'cmsplugin_filer_folder',

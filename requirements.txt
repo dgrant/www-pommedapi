@@ -5,6 +5,8 @@ South==0.8.1
 Pillow==2.1.0
 django-reversion==1.7.1
 django-debug-toolbar==0.9.4
+cmsplugin-contact==1.0.0
+recaptcha-client==1.0.6
 
 django-filer==0.9.5
 cmsplugin-filer==0.9.5
