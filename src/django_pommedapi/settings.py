@@ -168,6 +168,9 @@ INSTALLED_APPS = (
 #    'cms.plugins.video',
 
     'debug_toolbar',
+
+#    'invitation',
+    'widget_tweaks',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -205,6 +208,8 @@ LANGUAGES = [
     ('fr', gettext('Francais')),
 ]
 
+LOGIN_REDIRECT_URL="/"
+
 CMS_TEMPLATES = (
     ('basic_page.html', gettext('default')),
 )
@@ -235,3 +240,5 @@ THUMBNAIL_PROCESSORS = (
         'easy_thumbnails.processors.filters',
 )
 
+#ACCOUNT_INVITATION_DAYS=365
+#INVITATIONS_PER_USER=200
