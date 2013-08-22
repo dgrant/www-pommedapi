@@ -11,12 +11,5 @@
         {% endif %}
       </li>   
     {% endfor %}
-
-    {% if user.is_authenticated %}
-      <li><a href="{% url 'django.contrib.auth.views.logout' %}">Logout</a></li>
-    {% else %}
-       <li><a href="{% url 'django.contrib.auth.views.login' %}">Login</a></li>
-        <li><a href="{% url 'registration_register' %}">Register</a></li>
-    {% endif %}
   </ul>
 </div> <!-- sidebar-nav -->

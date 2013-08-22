@@ -171,6 +171,7 @@ INSTALLED_APPS = (
 
 #    'invitation',
     'widget_tweaks',
+    'pommedapi',
 )
 
 # A sample logging configuration. The only tangible logging
