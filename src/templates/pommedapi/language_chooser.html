@@ -1,0 +1,13 @@
+{% load i18n menu_tags %}
+<div class="btn-toolbar">
+<div class="btn-group">
+{% ifequal current_language "en" %}
+   <a href="/en/" class="btn btn-mini{% ifequal current_language "en" %} active{% endifequal %}">Anglais</a>
+   <a href="/fr/" class="btn btn-mini{% ifequal current_language "fr" %} active{% endifequal %}">Francais</a>
+{% endifequal %}
+{% ifequal current_language "fr" %}
+   <a href="/en/" class="btn btn-mini{% ifequal current_language "en" %} active{% endifequal %}">English</a>
+   <a href="/fr/" class="btn btn-mini{% ifequal current_language "fr" %} active{% endifequal %}">French</a>
+{% endifequal %}
+</div>
+</div>
