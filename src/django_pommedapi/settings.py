@@ -209,6 +209,22 @@ LANGUAGES = [
     ('fr', gettext('Francais')),
 ]
 
+CMS_LANGUAGES = {
+    1: [
+        {
+            'code': 'en',
+            'name': gettext('English'),
+        },
+        {
+            'code': 'fr',
+            'name': gettext('Francais'),
+        }
+    ],
+    'default': {
+            'hide_untranslated': False,
+    }
+}
+
 LOGIN_REDIRECT_URL="/"
 
 CMS_TEMPLATES = (
