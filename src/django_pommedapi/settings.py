@@ -4,10 +4,10 @@ gettext = lambda s: s
 # PROJECT_PATH is set to one level above this file
 PROJECT_PATH = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
 
-from local_settings import *
-
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+
+from local_settings import *
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -18,7 +18,7 @@ MANAGERS = ADMINS
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.pommedapi.org']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -28,7 +28,7 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 SITE_ID = 1
 
@@ -160,7 +160,7 @@ INSTALLED_APPS = (
     'cmsplugin_filer_image',
     'cmsplugin_filer_teaser',
     'cmsplugin_filer_video',
-    
+
     # default equivalents
 #    'cms.plugins.file',
 #    'cms.plugins.picture',
@@ -169,6 +169,7 @@ INSTALLED_APPS = (
 
     'debug_toolbar',
 
+    'registration',
 #    'invitation',
     'widget_tweaks',
     'pommedapi',
@@ -257,5 +258,12 @@ THUMBNAIL_PROCESSORS = (
         'easy_thumbnails.processors.filters',
 )
 
-#ACCOUNT_INVITATION_DAYS=365
-#INVITATIONS_PER_USER=200
+ACCOUNT_ACTIVATION_DAYS=365
+ACCOUNT_INVITATION_DAYS=365
+INVITATIONS_PER_USER=300
+
+EMAIL_LOCAL_HOSTNAME = "pommedapi.org"
+EMAIL_HOST = "smtp.mailgun.org"
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "postmaster@pommedapi.org"
+EMAIL_HOST_PASSWORD = "8t-c4sbp9n93"

@@ -1,0 +1,52 @@
+diff -ur Django-1.5.2.orig/django/conf/global_settings.py Django-1.5.2/django/conf/global_settings.py
+--- Django-1.5.2.orig/django/conf/global_settings.py	2013-09-03 22:44:14.052133561 -0700
++++ Django-1.5.2/django/conf/global_settings.py	2013-09-03 22:44:28.943389458 -0700
+@@ -184,6 +184,9 @@
+ EMAIL_HOST_PASSWORD = ''
+ EMAIL_USE_TLS = False
+ 
++# Hostname to send in the EHLO message to the SMTP server.
++EMAIL_LOCAL_HOSTNAME = ''
++
+ # List of strings representing installed apps.
+ INSTALLED_APPS = ()
+ 
+diff -ur Django-1.5.2.orig/django/core/mail/backends/smtp.py Django-1.5.2/django/core/mail/backends/smtp.py
+--- Django-1.5.2.orig/django/core/mail/backends/smtp.py	2013-09-03 22:44:14.056133362 -0700
++++ Django-1.5.2/django/core/mail/backends/smtp.py	2013-09-03 22:46:50.436318472 -0700
+@@ -15,7 +15,7 @@
+     A wrapper that manages the SMTP network connection.
+     """
+     def __init__(self, host=None, port=None, username=None, password=None,
+-                 use_tls=None, fail_silently=False, **kwargs):
++                 use_tls=None, fail_silently=False, from_host=None, **kwargs):
+         super(EmailBackend, self).__init__(fail_silently=fail_silently)
+         self.host = host or settings.EMAIL_HOST
+         self.port = port or settings.EMAIL_PORT
+@@ -27,6 +27,14 @@
+             self.password = settings.EMAIL_HOST_PASSWORD
+         else:
+             self.password = password
++
++        # If from_host and settings.EMAIL_FROM_HOST are not specified,
++        # socket.getfqdn() gets used. For performance, we use the cached
++        # FQDN for from_host.
++        self.from_host = from_host or \
++                         settings.EMAIL_LOCAL_HOSTNAME or \
++                         DNS_NAME.get_fqdn()
++
+         if use_tls is None:
+             self.use_tls = settings.EMAIL_USE_TLS
+         else:
+@@ -43,10 +51,8 @@
+             # Nothing to do if the connection is already open.
+             return False
+         try:
+-            # If local_hostname is not specified, socket.getfqdn() gets used.
+-            # For performance, we use the cached FQDN for local_hostname.
+             self.connection = smtplib.SMTP(self.host, self.port,
+-                                           local_hostname=DNS_NAME.get_fqdn())
++                                           local_hostname=self.from_host)
+             if self.use_tls:
+                 self.connection.ehlo()
+                 self.connection.starttls()
