@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "css/bootstrap-responsive.min.css" %}">
     <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
 
     {% render_block "css" %}
 
@@ -30,16 +31,31 @@
 
     <div class="container">
       <div class="row">
-        <div class="span12">
-          <img src="{% static "img/main_bg.png" %}" />
+	<div class="span12">
+          <div class="logo pull-left"></div>
+          <div class="contact pull-right">
+		<div class="address">
+				<span class="street-address">2190 East 44th Avenue</span>
+				<span class="locality">Vancouver</span>
+				<span class="region">BC</span>
+				<span class="postal-code">V5P 1N2</span>
+		</div>
+		<div class="phone-numbers">
+				<span class="phone-label">Phone:</span> <span class="phone-number">604.877.1122</span>
+				<span class="fax-label">Fax:</span> <span class="fax-number">604.877.1154</span>
+		</div>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="span12 kids"></div>
       </div>
 
       <div class="row">
         <div class="span3">
           {% show_menu %}
 <div class="sidebar-nav">
-  <ul class="nav nav-lsit">
+  <ul class="nav nav-list">
           <li>{% language_chooser "pommedapi/language_chooser.html" %}</li>
   </ul>
 </div>
@@ -54,19 +70,12 @@
        </div> <!-- span -->
     </div> <!-- row -->
 
-
     <div class="row">
       <div class="span12">
-        <img src="{% static "img/footer_bg.png" %}" />
-      </div> <!-- span -->
-    </div> <!-- row -->
-
-    <div class="row">
-      <div class="span12">
-        <p class="text-center">&copy; Pomme d'Api 2013</p>
-        <p class="text-center">
+        <div class="copyright">&copy; Pomme d'Api 2013</div>
+        <div class="creativecommons">
 	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Pomme d'Api website</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Pomme d'Api Preschool</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
-        </p>
+        </div>
       </div>
     </div>
 
