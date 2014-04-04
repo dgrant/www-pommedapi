@@ -13,4 +13,3 @@ cmsplugin-filer==0.9.5
 
 django-registration==1.0
 django-widget-tweaks==1.3
-#django-invitation==1.0
