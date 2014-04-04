@@ -1,6 +1,5 @@
 Django==1.5.5
 django-cms==2.4.3
-mysql-python==1.2.5
 South==0.8.4
 Pillow==2.1.0
 django-reversion==1.7.1
