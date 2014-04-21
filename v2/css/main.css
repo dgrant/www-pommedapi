@@ -1,0 +1,307 @@
+body {
+	background: #c40807;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+p {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+ul {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+li {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #de2221;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* it's amazing how bad superscript looks before you tweak it */
+sup {
+    top: -0.5em;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    height: 1.5em;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
+	border-color: #c40807;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(222,34,33,.6);
+}
+
+input {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1em;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.nav {
+    list-style: none outside none;
+    margin: 0; padding: 0;
+}
+.sidebar > .nav {
+	padding: 4px;
+	border: #c40807 3px solid;
+	border-radius: 4px;
+	background: white;
+}
+.nav li {
+	display: block;
+	margin: 2px;
+}
+.nav li > a {
+	display: block;
+	color: #333;
+	line-height: normal;
+	padding: 4px 12px;
+	font-size: 1.2em;
+}
+.nav li.active.group, .nav li.active-group {
+	position: relative;
+	left: -1px;
+	margin-right: -14px;
+	background: white;
+	border: #c40807 2px solid;
+	box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
+}
+.nav li.active-group > a {
+}
+.nav li.active a {
+	color: black;
+}
+.nav li li > a {
+	font-size: 1em;
+}
+
+.nav li > a:hover {
+	text-decoration: none;
+	color: black;
+	background: #ecc;
+}
+.nav li.active > a {
+	background: #c40807;
+	color: white;
+}
+
+.container {
+	max-width: 38em;
+	min-width: 280px;
+	margin: 10px auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 16px;
+	border-radius: 10px;
+	background: white;
+	color: #333;
+}
+.content {
+	max-width: 35em;
+}
+
+.logo {
+	float: left;
+	background: url('../assets/logo.png') no-repeat center;
+	width: 258px; height: 125px;
+}
+
+.contact {
+	float: right;
+	padding-top: 8px;
+	font-size: 18px;
+	line-height: 24px;
+	white-space: nowrap;
+}
+
+.phone-numbers {
+	padding-top: 9px;
+}
+
+.kids  {
+	background: url('../assets/kids.png') no-repeat center;
+	height: 136px;
+}
+
+.copyright-block {
+	clear: both;
+	margin-top: 2em;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	color: #888;
+}
+
+.creativecommons {
+	text-align: center;
+	font-size: 12px;
+	color: #888;
+	line-height: normal;
+}
+.creativecommons a {
+	color: #a86d72;
+}
+
+.locality:before {
+	content: '\a';
+	white-space: pre;
+}
+
+h1, h2, h3, .tagline {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+	font-size: 2em;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 1.3333em;
+	margin-bottom: 1.3333em;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin-top: 0.8333em;
+	margin-bottom: 0.8333em;
+}
+
+.language-chooser {
+	margin: 12px 0;
+}
+
+.fileIcon {
+	height: 32px; width: 32px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.route-planner label {
+	display: block;
+	height: 30px; line-height: 30px;
+}
+.route-planner input[type="submit"] {
+	line-height: 1.5em;
+}
+.route-planner .address_input {
+	width: 18em;
+}
+
+.btn-group {
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	border: 1px solid #999;
+	border-radius: 3px;
+}
+.btn-group .btn {
+	display: inline-block;
+	vertical-align: top;
+	line-height: normal;
+	padding: 4px 12px;
+	font-size: 0.8em;
+	background: white;
+	color: black;
+}
+.btn-group .btn:hover {
+	text-decoration: none;
+}
+.btn-group .btn:hover {
+	background: #eee;
+	box-shadow: inset 0 0 2px 1px rgba(0,0,0,0.3);
+}
+.btn-group .btn.active {
+	background: #c40807;
+	color: white;
+	cursor: default;
+}
+.btn-group .btn.active:hover {
+	box-shadow: none;
+}
+
+@media (max-width: 540px) {
+	.logo {
+		float: none;
+	}
+	.contact {
+		float: none;
+		margin-top: 1em;
+	}
+}
+
+@media (min-width: 740px) {
+	body {
+		font-size: 14px;
+	}
+	.sidebar {
+		/*position: absolute;*/
+		float: left;
+		width: 19em;
+	}
+	.content {
+		margin-left: 21em;
+	}
+	.container {
+		max-width: 59em;
+	}
+}
+
+@media (min-width: 900px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,25 @@
+﻿{
+	"pages" : [
+		{"page": "index", "en": "Pomme d'Api", "fr": "Pomme d'Api"},
+		{"page": "about-us", "en": "About us", "fr": "À propos de nous", "pages": [
+			{"page": "philosophy", "en": "Our philosophy", "fr": "Notre philosophie"},
+			{"page": "child-development", "en": "Child development", "fr": "Développement de l’enfant"},
+			{"page": "learning-languages", "en": "Learning Languages", "fr": "Apprendre les langues"}
+		]},
+		{"page": "teachers", "en": "Our teachers", "fr": "Nos éducatrices"},
+		{"page": "programs", "en": "Our programs", "fr": "Nos programmes", "pages": [
+			{"page": "immersion", "en": "Immersion program", "fr": "Programme d’immersion"},
+			{"page": "francophone", "en": "Francophone program", "fr": "Programme francophone"}
+		]},
+		{"page": "registration", "en": "Registration and fees", "fr": "Inscription et frais", "pages": [
+			{"page": "tuition", "en": "Tuition", "fr": "Droits de scolarité"},
+			{"page": "faq", "en": "FAQ", "fr": "Foire aux questions"}
+		]},
+		{"page": "positions", "en": "Parent positions", "fr": "Postes des parents bénévoles", "pages":[
+			{"page": "board", "en": "Board positions", "fr": "Postes administratifs"}
+		]},
+		{"page": "participation", "en": "Parent participation", "fr": "La participation des parents"},
+		{"page": "contact", "en": "Contact us", "fr": "Contactez-nous"},
+		{"page": "location", "en": "Find us", "fr": "Nous trouver"}
+	]
+}

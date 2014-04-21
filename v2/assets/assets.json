@@ -1,0 +1,14 @@
+{
+	"classroom": {
+		"path": "classroom.jpg",
+		"type": "jpeg",
+		"en": "classroom",
+		"fr": "la salle de classe"
+	},
+	"smiling_girl": {
+		"path": "girl_paint_stock.png",
+		"type": "png",
+		"en": "smiling girl",
+		"fr": "jeune fille souriante"
+	}
+}

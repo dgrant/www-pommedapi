@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pomme d'Api</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="../css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="clearfix">
+      <div class="logo"></div>
+      <div class="contact">
+        <div class="address">
+          <span class="street-address">2190 East 44th Avenue</span>
+          <span class="locality">Vancouver</span>
+          <span class="region">BC</span>
+          <span class="postal-code">V5P 1N2</span>
+        </div>
+        <div class="phone-numbers">
+          <span class="phone-label">Téléphone:</span> <span class="phone-number">{%telephone_number%}</span>
+        </div>
+      </div>
+    </div>
+    <div class="kids"></div>
+    <div class="sidebar">
+      {% @show_menu %}
+      <div class="btn-group language-chooser">
+        <span class="btn active">Français</span><a href="{% en_path %}" class="btn">English</a>
+      </div>
+    </div>
+    <div class="content">
+{DOC}
+    </div>
+
+  <div class="copyright-block">
+    <div class="copyright">{%copyright%}</div>
+    <div class="creativecommons">
+       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Le site Web</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Pré-maternelle Pomme d'Api</span> est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 non transposé</a>.
+     </div>
+ </div>
+
+</div> <!-- /container -->
+{% @scripts %}
+</body>
+
+</html>

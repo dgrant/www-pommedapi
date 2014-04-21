@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Authoring the Pomme D'Api website</title>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<style>
+		body {
+			background: #990000;
+		}
+		h1,h2,h3 {
+			font-family: 'Montserrat', sans-serif;
+		}
+		h1 {
+			border-bottom: 3px solid #cc0000;
+		}
+		h2 {
+			border-bottom: 1px solid #cc0000;
+		}
+		.content {
+			background: white;
+			padding: 30px;
+			border-radius: 10px;
+			margin: 0 auto;
+			max-width: 800px;
+		}
+		code {
+			padding: 2px;
+			background: #ddd;
+		}
+		code.block {
+			color: white;
+			background: #333;
+			border: 1px solid #ddd;
+			display: block;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+<h1>Authoring the Pomme D'Api website</h1>
+
+<p>Besides the basic technologies of the web (HTML, CSS, JavaScript), you'll need to familiarize yourself with a couple other technologies: Markdown and Grunt. Don't worry, it'll all be pretty painless.</p>
+
+<h1>Markdown</h1>
+<p>
+The website uses a simple formatting syntax called "Markdown" to define its formatting. If you're familiar with wiki-style markup, you'll feel quite at home with Markdown. The two main reasons for using Markdown are:
+<ol>
+	<li>It's simpler than raw HTML. Since non-technical people will be providing content for the website, it's kinder on them to provide a text file rather than nicely-formatted HTML.</li>
+	<li>It provides more consistent styling than user-provided HTML. If someone is using something like Microsoft Word to edit HTML, it adds all sorts of funky inline CSS that can be hard to remove. If we pull everything in via Markdown, we end up with a much simpler structure (unstyled &lt;h1&gt;s and &lt;ul&gt;s and so forth) that we can control via stylesheets.</li>
+</ol>
+</p>
+<p>
+You can find the Markdown syntax at <a href="https://daringfireball.net/projects/markdown/syntax">Daring Fireball</a>.
+</p>
+<p>
+You can find all the Markdown files the website uses in the <code>content</code> directory. Each file comes in English (.en.md) and French (.fr.md) flavors.
+</p>
+
+<h1>Grunt</h1>
+<p>Grunt is a very handy (and cross-platform) build tool for web application projects. It's based on <a href='http://nodejs.org'>Node.js</a> and, while you'll need to install Node, you don't really need to know how it works.</p>
+
+<h2>Installing Grunt</h2>
+<ol>
+	<li>Install Node.js. The <a href="http://nodejs.org/">Node.js website</a> should lead you through the steps. Make sure that the option to add Node.js to your path is selected, or do it yourself after the install I guess.</li>
+	<li>Install the Grunt CLI (command-line interface). Run <code class="block">npm install -g grunt-cli</code> from the command line / terminal. "npm" is the node package manager, the -g means "install globally", and grunt-cli is Grunt's command-line interface.</li>
+	<li>And... that's it.</li>
+</ol>
+
+<h2>Using Grunt</h2>
+<p>
+	Now that you've got everything installed, you can build the website! From the command line / terminal, navigate to the Pomme D'Api project directory (tip: it's probably where you found this file).
+	<ol>
+		<li>Run <code class="block">npm install</code> to install all the components you'll need before you can build.</li>
+		<li>Run <code class="block">grunt</code> Grunt will run through the various build commands in Gruntfile.js, the end result of which will be a freshly-built version of the website in the <code>www</code> directory.</li>
+	</ol>
+</p>
+<p>
+	I've configured a "watch" task that will monitor the source directories and rebuild the site when files change. Run <code>grunt watch</code> to take advantage of this.
+</p>
+
+<h1>Project structure</h1>
+<p>
+	As previously mentioned, most of the site content is in the <code>content</code> directory in Markdown format. There are some other important files to be aware of, though.
+</p>
+
+<h2>Templates</h2>
+<p>The site page template is in the <code>templates</code> directory in English and French flavors.</p>
+
+<h2>Variables</h2>
+<p>Variables shared between files can go in <code>variables.json</code>. Putting shared values here can be really helpful when, say, the school's phone number changes, or the registration fee changes. Both of these events happened recently, and we updated the information on some pages and missed others. Hopefully <code>variables.json</code> will help mitigate this problem in the future.</p>
+<p>To use a variable in your markdown, enclose it in <code>{% %}</code>. For example, if you want to write Pomme d'Api's phone number to the page, you'd write <code>{% telephone_number %}</code></p>
+
+<h2>Navigation</h2>
+<p>The web site's navigation structure is in <code>nav/nav.json</code>. There's a <code>pages</code> property that contains an array of the top-level pages. Each of these pages can have an array of sub-pages. Each page has a page ID (<code>page</code>), and English and French strings to describe the page (<code>en</code> and <code>fr</code> respectively). The build process will inspect this file to generate the left-hand nav on each HTML page. Note: the current build process assumes there are only two "levels" of pages.</p>
+
+<h2>Assets</h2>
+<p><code>assets.json</code> has information about the assets we use in the Markdown which, at the time I'm writing this, is two image files. Since the only assets we have are images, the code only handles images... and will choke if you pass anything else through. Assets have a <code>path</code> (relative to the <code>assets</code> directory, English and French descriptive strings (<code>en</code> and <code>fr</code> respectively), and a <code>type</code> (png, jpeg, and gif).</p>
+<p>Include assets in your Markdown using the <code>{% @asset:... %}</code> replacement variable (replace <code>...</code> with the asset name). Assets are rendered in-place in the page.</p>
+
+<h2>Media</h2>
+<p>Assets that we don't directly display (e.g., PDF documents) are listed in <code>media.json</code>. Media files have a <code>path</code> (relative to the <code>media</code> directory, English and French descriptive strings (<code>en</code> and <code>fr</code> respectively), and an <code>icon</code>, assumed to be a 32x32 png in the <code>assets/media</code> directory.</p>
+<p>Include media files in your Markdown using the <code>{% @media:... %}</code> replacement variable (replace <code>...</code> with the asset name). Media files are rendered as links.</p>
+
+<h1>JavaScript</h1>
+<p>This rewrite obviated the need to use JavaScript, but we might need to do fancy things in the future. There's a directory called <code>scripts</code> that we can use to include arbitrary script in our pages; if there's a <code>xyz.script</code> file in that directory that matches a <code>xyz.[en|fr].md</code> file in the <code>content</code> directory, it'll be included verbatim at the end of <code>xyz.html</code>. If script is required by ALL pages, then put that in the templates.</p>
+
+</div>
+</body>
+</html>
