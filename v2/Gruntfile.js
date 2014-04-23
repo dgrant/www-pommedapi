@@ -155,7 +155,12 @@ module.exports = function(grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		clean: [outputDir],
+		clean: {
+			www: {
+				options: { force: true },
+				src: [outputDir]
+			}
+		},
 		md2html: {
 			options: {},
 			en: {

@@ -1,4 +1,9 @@
+html {
+	margin: 0;
+}
+
 body {
+	margin: 5px;
 	background: #c40807;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
@@ -29,6 +34,9 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+a img {
+	border: 0;
 }
 
 /* it's amazing how bad superscript looks before you tweak it */
@@ -80,6 +88,11 @@ input {
   clear: both;
 }
 
+.sidebar {
+	float: left;
+	width: 19em;
+}
+
 .nav {
     list-style: none outside none;
     margin: 0; padding: 0;
@@ -129,8 +142,8 @@ input {
 }
 
 .container {
-	max-width: 38em;
-	min-width: 280px;
+	max-width: 59em;
+	min-width: 40em;
 	margin: 10px auto;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -140,7 +153,9 @@ input {
 	color: #333;
 }
 .content {
-	max-width: 35em;
+	background: white;
+	margin-left: 21em;
+	max-width: 59em;
 }
 
 .logo {
@@ -241,6 +256,7 @@ h3 {
 	overflow: hidden;
 	border: 1px solid #999;
 	border-radius: 3px;
+	line-height: normal;
 }
 .btn-group .btn {
 	display: inline-block;
@@ -277,20 +293,17 @@ h3 {
 	}
 }
 
-@media (min-width: 740px) {
-	body {
-		font-size: 14px;
-	}
+@media (max-width: 740px) {
 	.sidebar {
-		/*position: absolute;*/
-		float: left;
-		width: 19em;
+		float: none;
+		width: auto;
 	}
 	.content {
-		margin-left: 21em;
+		margin-left: 0;
 	}
 	.container {
-		max-width: 59em;
+		max-width: 35em;
+		min-width: 20em;
 	}
 }
 
