@@ -56,7 +56,7 @@ __Q. How are statutory holidays handled?__
 
 The school is closed on all Statutory holidays.
 
-Q__. How (or who) do parents communicate questions and concerns?__
+__Q. How (or who) do parents communicate questions and concerns?__
 
 Parents are encouraged to discuss issues with the teachers or any of the board members.
 
