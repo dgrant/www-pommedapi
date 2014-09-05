@@ -41,7 +41,7 @@ Installing Grunt
 ----------------
 
 1.  Install Node.js. The [Node.js website][] should lead you through the
-    steps. Make sure that the option to add Node.js to your path is
+    steps. Make sure that the option to add Node.js to your PATH is
     selected, or do it yourself after the install I guess.
 2.  Install the Grunt CLI (command-line interface). Run
     `npm install -g grunt-cli`{.block} from the command line / terminal.
