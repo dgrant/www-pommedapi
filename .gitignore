@@ -1,9 +1,0 @@
-/google8ca05975342a3a04.html
-*.pyc
-/env
-/env.bak
-/pommedapi/media
-/src/django_pommedapi/local_settings.py
-/django_pommedapi.pid
-/static
-/src/media
