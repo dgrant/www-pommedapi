@@ -44,7 +44,7 @@ Installing Grunt
     steps. Make sure that the option to add Node.js to your PATH is
     selected, or do it yourself after the install I guess.
 2.  Install the Grunt CLI (command-line interface). Run
-    `npm install -g grunt-cli`{.block} from the command line / terminal.
+    `npm install -g grunt-cli` from the command line / terminal.
     “npm” is the node package manager, the -g means “install globally”,
     and grunt-cli is Grunt’s command-line interface.
 3.  And… that’s it.
@@ -54,13 +54,13 @@ Using Grunt
 
 Now that you’ve got everything installed, you can build the website!
 From the command line / terminal, navigate to the Pomme D’Api project
-directory (tip: it’s probably where you found this file).
+directory (under `src/`)
 
-1.  Run `npm install`{.block} to install all the components you’ll need
+1.  Run `npm install` to install all the components you’ll need
     before you can build.
-2.  Run `grunt`{.block} Grunt will run through the various build
+2.  Run `grunt`. Grunt will run through the various build
     commands in Gruntfile.js, the end result of which will be a
-    freshly-built version of the website in the `www` directory.
+    freshly-built version of the website in the `www/` directory.
 
 </p>
 I’ve configured a “watch” task that will monitor the source directories
