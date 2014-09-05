@@ -26,7 +26,7 @@ are:
 </p>
 You can find the Markdown syntax at [Daring Fireball][].
 
-You can find all the Markdown files the website uses in the `content`
+You can find all the Markdown files the website uses in the `src/content`
 directory. Each file comes in English (.en.md) and French (.fr.md)
 flavors.
 
