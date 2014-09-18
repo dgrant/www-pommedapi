@@ -18,7 +18,7 @@ Both teachers have completed their Early Childhood Education diploma (ECE Regist
 
 __Q. How long is the wait list?__
 
-Our wait list varies from year to year.  There are generally students on the wait list, but spaces do become available throughout the year, so we encourage all parents to contact us at any time. Registration begins at our Open House.  For the 2013/2014 school year the Open House is on Saturday, February 22, 2014 from at 9:00AM to 12:00PM.
+Our wait list varies from year to year.  There are generally students on the wait list, but spaces do become available throughout the year, so we encourage all parents to contact us at any time. Registration begins at our Open House.  For the 2015/2016 school year the Open House will be held in February 2015.
 
 __Q. I want to observe the classroom, how do I do that?__
 

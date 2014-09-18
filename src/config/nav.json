@@ -15,10 +15,12 @@
 			{"page": "tuition", "en": "Tuition", "fr": "Droits de scolarité"},
 			{"page": "faq", "en": "FAQ", "fr": "Foire aux questions"}
 		]},
-		{"page": "positions", "en": "Parent positions", "fr": "Postes des parents bénévoles", "pages":[
-			{"page": "board", "en": "Board positions", "fr": "Postes administratifs"}
-		]},
 		{"page": "participation", "en": "Parent participation", "fr": "La participation des parents"},
+		{"page": "current-students", "en": "Current students", "fr": "Étudiants inscrits", "pages": [
+			{"page": "positions", "en": "Parent positions", "fr": "Postes des parents bénévoles"},
+			{"page": "board", "en": "Board positions", "fr": "Postes administratifs"},
+			{"page": "documents", "en": "Documents", "fr": "Documents"}
+		]},
 		{"page": "contact", "en": "Contact us", "fr": "Contactez-nous"},
 		{"page": "location", "en": "Find us", "fr": "Nous trouver"}
 	]

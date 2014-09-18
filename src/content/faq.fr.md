@@ -18,7 +18,7 @@ Nos éducatrices sont diplômées en Éducation à la petite enfance et ont leur
 
 __Q. Est-ce que la liste d'attente est longue?__
 
-Notre liste d'attente varie d'une année à l'autre. Il y a généralement des élèves sur la liste d'attente, mais des places se libèrent en cours d'année. Nous encourageons donc les parents à nous contacter en tout temps. La période d’inscription débute à notre journée Portes Ouvertes. Pour l'année scolaire 2014-2015, la journée Portes Ouvertes se tiendra le samedi 22 février 2014 de 9h00 à 12h00.
+Notre liste d'attente varie d'une année à l'autre. Il y a généralement des élèves sur la liste d'attente, mais des places se libèrent en cours d'année. Nous encourageons donc les parents à nous contacter en tout temps. La période d’inscription débute à notre journée Portes Ouvertes. Pour l'année scolaire 2015-2016, la journée Portes Ouvertes se tiendra en février 2015.
 
 __Q. Je voudrais observer la classe, que dois-je faire?__
 

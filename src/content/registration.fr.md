@@ -1,14 +1,6 @@
 # Inscription et frais
 
-Nous acceptons toujours les demandes d’inscriptions pour l’année scolaire 2013-2014 (Immersion 3 jours – Francophone). Nous avons un nombre très limité de places disponibles dans chacune des classes. __Appelez-nous dès maintenant!__
-
-La période d’inscriptions de Pomme d'Api pour la prochaine année scolaire commence lors de la journée annuelle Portes Ouvertes. La journée Portes Ouvertes pour l’année scolaire 2014-2015 se tiendra le samedi 22 février 2014 de 9h00 à 12h00. À compter de cette date, nous acceptons les inscriptions pour toutes les classes.
-
-Le formulaire d’inscription peut être complété à l’avance:
-
-{% @media:registration_form.en %}
-
-{% @media:registration_form.fr %}
+La période d’inscriptions de Pomme d'Api pour la prochaine année scolaire commence lors de la journée annuelle Portes Ouvertes. La journée Portes Ouvertes pour l’année scolaire 2015-2016 se tiendra en février 2015. À compter de cette date, nous acceptons les inscriptions pour toutes les classes.
 
 L’inscription se fait selon le principe du premier arrivé, premier servi. Cependant, la priorité est donnée, dans l’ordre, aux:
 
