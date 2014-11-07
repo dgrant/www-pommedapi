@@ -1,9 +1,16 @@
 module.exports = function(grunt) {
-	var outputDir = "../www/";
+	var wwwDir = "../www/";
+	var parentGuideDir = "../doc/parentGuide";
 
 	var p = require("path"); // Load the path manipulation module
 	var fs = require("fs"); // Load the filesystem module
 	var imgSize = require("image-size"); // image-size tells us the size of images. Go figure!
+	
+	// RO: parent guide support is not in yet. Just placeholder right now
+	var parentGuideLocation = {
+		"en": p.join(parentGuideDir, 'parent_guide.en.md'),
+		"fr": p.join(parentGuideDir, 'parent_guide.fr.md')
+	};
 
 	// Get a suitable replacement regular expression for a given variable name.
 	function getReplacementRegexp(v) {
@@ -25,7 +32,8 @@ module.exports = function(grunt) {
 	var sharedVariables, media, assets;
 
 	// Read the navigation structure
-	var navJSON = grunt.file.readJSON('config/nav.json');
+	var navJSON = grunt.file.readJSON('config/www.json');
+	var pgJSON = grunt.file.readJSON('config/parent_guide.json');
 
 	function getParentPage(currentPage, pages) {
 		var i,j;
@@ -49,7 +57,11 @@ module.exports = function(grunt) {
 	}
 
 	function getFileId(file) {
-		return file.match(/([^\/]+)\.html$/)[1];
+		var match = file.match(/([^\/]+)\.html$/);
+		if (!match) {
+			grunt.fail.fatal("Could not find a file ID for " + file);
+		}
+		return match[1];
 	}
 
 	// Build the navigation HTML
@@ -93,17 +105,17 @@ module.exports = function(grunt) {
 	}
 
 	// Function to replace all replacement variables with their calculated values.
-	function htmlPostProcess(file, language) {
+	function replaceVariables(file, language, options) {
+		grunt.verbose.writeln("Replacing variables in " + file);
+		
 		var r, v;
 		var fileContent = grunt.file.read(file);
-		var frPath, enPath, scriptsPath, fileId;
+		var frPath = '', enPath = '', scriptsPath, fileId;
 
-		if (language === 'fr') {
-			frPath = file;
-			enPath = swapLanguagePath(file,'fr','en');
-		} else if (language === 'en') {
-			enPath = file;
-			frPath = swapLanguagePath(file,'en','fr');
+		if (options) {
+			frPath = options.frPath || '';
+			enPath = options.enPath || '';
+			fileId = options.fileId;
 		}
 
 		r = getReplacementRegexp('fr_path');
@@ -113,7 +125,9 @@ module.exports = function(grunt) {
 		fileContent = fileContent.replace(r, enPath);
 
 		r = getReplacementRegexp('@show_menu');
-		fileContent = fileContent.replace(r, getNavHtml(file, language));
+		if (fileContent.match(r)) {
+			fileContent = fileContent.replace(r, getNavHtml(file, language));
+		}
 
 		for (v in sharedVariables) {
 			r = getReplacementRegexp(v);
@@ -133,13 +147,14 @@ module.exports = function(grunt) {
 		}
 
 		// Scripts
-		fileId = getFileId(file);
-		scriptsPath = p.join('./scripts', fileId + '.script');
-		r = getReplacementRegexp("@scripts");
-		if (grunt.file.exists(scriptsPath)) {
-			fileContent = fileContent.replace(r, grunt.file.read(scriptsPath));
-		} else {
-			fileContent = fileContent.replace(r, '');
+		if (fileId) {
+			scriptsPath = p.join('./scripts', fileId + '.script');
+			r = getReplacementRegexp("@scripts");
+			if (grunt.file.exists(scriptsPath)) {
+				fileContent = fileContent.replace(r, grunt.file.read(scriptsPath));
+			} else {
+				fileContent = fileContent.replace(r, '');
+			}
 		}
 
 		var unreplaced = fileContent.match(/{%.*%}/);
@@ -158,7 +173,11 @@ module.exports = function(grunt) {
 		clean: {
 			www: {
 				options: { force: true },
-				src: [outputDir]
+				src: [wwwDir]
+			},
+			parentGuide: {
+				options: { force: true },
+				src: [parentGuideDir]
 			}
 		},
 		md2html: {
@@ -171,7 +190,7 @@ module.exports = function(grunt) {
 					expand: true,
 					flatten: true,
 					src: 'content/*.en.md',
-					dest: p.join(outputDir,'en'),
+					dest: p.join(wwwDir,'en'),
 					ext: '.html'
 				}]
 			},
@@ -183,7 +202,7 @@ module.exports = function(grunt) {
 					expand: true,
 					flatten: true,
 					src: 'content/*.fr.md',
-					dest: p.join(outputDir,'fr'),
+					dest: p.join(wwwDir,'fr'),
 					ext: '.html'
 				}]
 			}
@@ -193,7 +212,7 @@ module.exports = function(grunt) {
 			en: {
 				files: [{
 					expand: true,
-					src: p.join(outputDir,'en','*.html'),
+					src: p.join(wwwDir,'en','*.html'),
 					dest: '.',
 					ext: '.html'
 				}]
@@ -201,7 +220,7 @@ module.exports = function(grunt) {
 			fr: {
 				files: [{
 					expand: true,
-					src: p.join(outputDir,'fr','*.html'),
+					src: p.join(wwwDir,'fr','*.html'),
 					dest: '.',
 					ext: '.html'
 				}]
@@ -209,13 +228,22 @@ module.exports = function(grunt) {
 		},
 		copy: {
 			media: {
-				files: [{expand: true, src: ['media/**'], dest: outputDir}]
+				files: [{expand: true, src: ['media/**'], dest: wwwDir}]
 			},
 			assets: {
-				files: [{expand: true, src: ['assets/**'], dest: outputDir}]
+				files: [{expand: true, src: ['assets/**'], dest: wwwDir}]
 			},
 			stylesheets: {
-				files: [{expand: true, src: ['css/**'], dest: outputDir}]
+				files: [{expand: true, src: ['css/**'], dest: wwwDir}]
+			}
+		},
+		concat: {
+			parentGuide: {
+				options: { separator: grunt.util.linefeed + grunt.util.linefeed },
+				files: [
+					{src: pgJSON.pages.map(function(v) { return p.join('content', v + '.en.md'); }), dest: parentGuideLocation.en},
+					{src: pgJSON.pages.map(function(v) { return p.join('content', v + '.fr.md'); }), dest: parentGuideLocation.fr}
+				]
 			}
 		},
 		watch: {
@@ -232,16 +260,32 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-md2html');
 	grunt.registerMultiTask('postProcHtml', 'Substitute variables in our generated HTML', function() {
-		var language = this.target;
+		var language = this.target, content, frPath, enPath, src;
 		grunt.log.writeln('language = ' + language);
 		this.files.forEach(function(file) {
-			var content = htmlPostProcess(file.src[0], language);
+			src = file.src[0];
+			if (language === 'fr') {
+				frPath = src;
+				enPath = swapLanguagePath(frPath,'fr','en');
+			} else if (language === 'en') {
+				enPath = src;
+				frPath = swapLanguagePath(enPath,'en','fr');
+			}
+			var content = replaceVariables(src, language, {enPath: enPath, frPath: frPath, fileId: getFileId(src)});
 			grunt.file.write(file.dest, content);
-			grunt.log.writeln('Processed "' + file.dest + '".');
+			grunt.verbose.writeln('Processed "' + file.dest + '".');
 		});
+	});
+	grunt.registerTask('postProcDocMarkdown', 'Substitute variables in our Markdown and generate a docx/PDF', function() {
+		var content;
+		content = replaceVariables(parentGuideLocation.en, 'en');
+		grunt.file.write(parentGuideLocation.en, content);
+		content = replaceVariables(parentGuideLocation.fr, 'fr');
+		grunt.file.write(parentGuideLocation.fr, content);
 	});
 	grunt.registerTask('getVariables', function() {
 		// Read the shared variables, media information
@@ -300,6 +344,8 @@ module.exports = function(grunt) {
 			}
 		}
 	});
+	
+	grunt.registerTask('buildDocs', ['getVariables','concat:parentGuide','postProcDocMarkdown']);
 
 	// Default task(s).
 	grunt.registerTask('default', ['clean','getVariables','copy','md2html','postProcHtml']);

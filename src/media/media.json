@@ -11,10 +11,10 @@
 		"en": "2014 French Registration Form",
 		"fr": "Formulaire d’inscription 2014 (français)"
 	},
-	"parent_handbook.en": {
+	"parent_guide.en": {
 		"path": "2014_en_parent_guide.pdf",
 		"icon": "pdf",
-		"en": "Parent Handbook (English)",
-		"fr": "Parent Handbook (English)"
+		"en": "Parent Guide (English)",
+		"fr": "Parent Guide (English)"
 	}
 }

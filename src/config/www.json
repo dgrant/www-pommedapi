@@ -19,7 +19,7 @@
 		{"page": "current-students", "en": "Current students", "fr": "Étudiants inscrits", "pages": [
 			{"page": "positions", "en": "Parent positions", "fr": "Postes des parents bénévoles"},
 			{"page": "board", "en": "Board positions", "fr": "Postes administratifs"},
-			{"page": "documents", "en": "Documents", "fr": "Documents"}
+			{"page": "documents", "en": "Parent guide", "fr": "Documents"}
 		]},
 		{"page": "contact", "en": "Contact us", "fr": "Contactez-nous"},
 		{"page": "location", "en": "Find us", "fr": "Nous trouver"}
