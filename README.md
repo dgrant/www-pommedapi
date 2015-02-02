@@ -241,7 +241,7 @@ PDF formatting isn't quite right
 
 Generating a PDF automatically turns out to be pretty difficult, and tweaking
 the output to get things just right is even more difficult. In general, if
-you ignore things that are just a little bit off, you'l lead a much happier
+you ignore things that are just a little bit off, you'll lead a much happier
 life than if you try to change things...
 
 If you absolutely must change something, Pandoc allows you to embed LaTex
