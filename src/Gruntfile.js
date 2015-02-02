@@ -5,12 +5,38 @@ module.exports = function(grunt) {
 	var p = require("path"); // Load the path manipulation module
 	var fs = require("fs"); // Load the filesystem module
 	var imgSize = require("image-size"); // image-size tells us the size of images. Go figure!
+
+	// Read variables.json
+	var sharedVariables = grunt.file.readJSON('config/variables.json');
+	// Infer the end year and school year from the startYear definition
+	sharedVariables.endYear = sharedVariables.startYear + 1;
+	sharedVariables.schoolYear = sharedVariables.startYear + "-" + sharedVariables.endYear;
+	sharedVariables.nextSchoolYear = sharedVariables.endYear + "-" + (sharedVariables.endYear + 1);
 	
-	// RO: parent guide support is not in yet. Just placeholder right now
 	var parentGuideLocation = {
-		"en": p.join(parentGuideDir, 'parent_guide.en.md'),
-		"fr": p.join(parentGuideDir, 'parent_guide.fr.md')
+		// Where the Markdown files go
+		"md": {
+			"en": p.join(parentGuideDir, 'markdown', 'parent_guide.en.md'),
+			"fr": p.join(parentGuideDir, 'markdown', 'parent_guide.fr.md')
+		},
+		// Where the PDF files go
+		"pdf": {
+			"en": p.join(parentGuideDir, 'pdf', 'parent_guide_' + sharedVariables.startYear + '.en.pdf'),
+			"fr": p.join(parentGuideDir, 'pdf', 'parent_guide_' + sharedVariables.startYear + '.fr.pdf')
+		}
 	};
+
+	// In general, Pandoc handles this for us. We go into raw LaTeX sometimes (for e.g., tables)
+	// so this does come in handy.
+	function texEscape(t) {
+		return t.replace(/\\/g, "\\textbackslash").replace(/[{}]/g, "\\$&").
+		// Convert Markdown to LaTeX, since we're putting everything into a TeX directive.
+		// We only deal with italic and bold currently, plus new paragraphs.
+		replace(/_([^_]+?)_(?!_)/g, "\\textit{$1}").replace(/__([^_]+?)__(?!_)/g, "\\textbf{$1}").
+		replace(/[&%$#_]/g, "\\$&").
+		replace(/~/g, "\\textasciitilde").
+		replace(/\^/g, "\\textasciicircum");
+	}
 
 	// Get a suitable replacement regular expression for a given variable name.
 	function getReplacementRegexp(v) {
@@ -29,45 +55,45 @@ module.exports = function(grunt) {
 
 	// Shared variables and asset/media information; we keep these global for ease of access.
 	// Populated by the getVariables task.
-	var sharedVariables, media, assets;
+	var media, assets;
 
 	// Read the navigation structure
 	var navJSON = grunt.file.readJSON('config/www.json');
 	var pgJSON = grunt.file.readJSON('config/parent_guide.json');
 
-	function getParentPage(currentPage, pages) {
-		var i,j;
-		var page, child;
-		for (i=0; i<pages.length; i++) {
-			page = pages[i];
-			if (page.page === currentPage) {
-				return null;
-			}
-			if (page.pages) {
-				for (j=0; j<page.pages.length; j++) {
-					child = page.pages[j];
-					if (child.page === currentPage) {
-						return page;
-					}
-				}
-			}
-		}
-		grunt.fail.fatal("Could not find file " + currentPage + " in the navigation structure.");
-		return null;
-	}
-
 	function getFileId(file) {
-		var match = file.match(/([^\/]+)\.html$/);
+		var match = file.match(/([^\/.]+)(\.html)?$/);
 		if (!match) {
 			grunt.fail.fatal("Could not find a file ID for " + file);
 		}
 		return match[1];
 	}
 
+	function getParentPage(currentPage, pages) {
+		var i,j;
+		var page, child;
+		for (i=0; i<pages.length; i++) {
+			page = pages[i];
+			if (getFileId(page.page) === currentPage) {
+				return null;
+			}
+			if (page.pages) {
+				for (j=0; j<page.pages.length; j++) {
+					child = page.pages[j];
+					if (getFileId(child.page) === currentPage) {
+						return page;
+					}
+				}
+			}
+		}
+		grunt.log.warn("Could not find file " + currentPage + " in the navigation structure.");
+		return null;
+	}
+
 	// Build the navigation HTML
 	function getNavHtml(file, language, parentPage) {
 		var currentPage = getFileId(file);
-		var pages, css;
+		var pages, css, pageId, parentPageId;
 
 		if (!parentPage) {
 			pages = navJSON.pages;
@@ -76,26 +102,32 @@ module.exports = function(grunt) {
 			pages = parentPage.pages;
 		}
 
+		if (parentPage) {
+			parentPageId = getFileId(parentPage.page);
+		}
+
 		var html = '<ul class="nav nav-list">';
 		pages.forEach(function(page){
+			pageId = getFileId(page.page);
 			css = [];
-			if (currentPage === page.page) {
+			if (currentPage === pageId) {
 				css.push('active');
 			}
 			if (page.pages) {
 				css.push('group');
 			}
-			if (parentPage && (parentPage.page === page.page)) {
+			if (parentPage && (parentPageId === pageId)) {
 				css.push('active-group');
 			}
+			var flattenedPage = page.page.split('/').pop();
 			html += (css.length ? '<li class="'+css.join(' ')+'">' : '<li>');
-			html += '<a href="' + page.page + '.html">'+page[language]+'</a>';
+			html += '<a href="' + flattenedPage + '.html">'+page[language]+'</a>';
 
 			// If page is the current page and has children, OR
 			// if the current page is a child of page,
 			// show page's children in the nav
-			if (((currentPage === page.page) && page.pages) ||
-				(parentPage && (parentPage.page === page.page))) {
+			if (((currentPage === pageId) && page.pages) ||
+				(parentPage && (parentPageId === pageId))) {
 				html += getNavHtml(file, language, page);
 			}
 			html += '</li>';
@@ -118,10 +150,10 @@ module.exports = function(grunt) {
 			fileId = options.fileId;
 		}
 
-		r = getReplacementRegexp('fr_path');
+		r = getReplacementRegexp('@fr_path');
 		fileContent = fileContent.replace(r, frPath);
 
-		r = getReplacementRegexp('en_path');
+		r = getReplacementRegexp('@en_path');
 		fileContent = fileContent.replace(r, enPath);
 
 		r = getReplacementRegexp('@show_menu');
@@ -137,13 +169,13 @@ module.exports = function(grunt) {
 		// Media
 		for (v in media) {
 			r = getReplacementRegexp("@media:"+v);
-			fileContent = fileContent.replace(r, media[v].link[language]);
+			fileContent = fileContent.replace(r, options.ignoreMedia ? '' : media[v].link[language]);
 		}
 
 		// Assets
 		for (v in assets) {
 			r = getReplacementRegexp("@asset:"+v);
-			fileContent = fileContent.replace(r, assets[v].tag[language]);
+			fileContent = fileContent.replace(r, options.ignoreAssets ? '' : assets[v].tag[language]);
 		}
 
 		// Scripts
@@ -157,6 +189,15 @@ module.exports = function(grunt) {
 			}
 		}
 
+		// Non-standard formatting
+		// infoBox
+		r = new RegExp('<!--\\s*infoBox\\s*-->([\\s\\S]+?)<!--\\s*\/infoBox\\s*-->','gm');
+		fileContent = fileContent.replace(r, options.infoBoxMarkup);
+		// section
+		var beginSection = new RegExp('<!--\\s*section1\\s*-->','gm');
+		var endSection = new RegExp('<!--\\s*\/section1\\s*-->','gm');
+		fileContent = fileContent.replace(beginSection, options.sectionMarkup.begin).replace(endSection, options.sectionMarkup.end);
+
 		var unreplaced = fileContent.match(/{%.*%}/);
 		if (unreplaced) {
 			// If we haven't replaced all the variables, raise an error; that indicates a typo'd variable somewhere.
@@ -164,6 +205,76 @@ module.exports = function(grunt) {
 		}
 
 		return fileContent;
+	}
+
+	function parseTableRow(row) {
+		return row.match(/[^|\r\n]+/g);
+	}
+
+	// Are you ready for some LaTeX command codes? I hope you are, because here they come!
+	function tweakMarkdownforPandoc(content) {
+		var ti, ri, ci, header, divider, rows, row, columns, column, columnWidths, boundingLine;
+		var table, tweakedTable, tweakedTableWidth;
+		var tables = content.match(/^\|[\s\S]+?\n[^|]/gm);
+		var tableRows, tableColumns;
+
+		function writeRow(r) {
+			return r.map(function(t) { return texEscape(t); }).join(" & ") + " \\\\" + grunt.util.linefeed;
+		}
+
+		if (tables) {
+			for (ti = 0; ti < tables.length; ti++) {
+				table = tables[ti];
+				tableRows = table.match(/^[\s\S]+?\n/gm);
+				tableColumns = parseTableRow(tableRows[0]);
+
+				header = [], rows = [], columnWidths = [];
+				for (ci = 0; ci < tableColumns.length; ci++) {
+					column = tableColumns[ci].trim();
+					
+					columnWidths.push(column.length);
+					header.push(column);
+				}
+
+				// ignore the last line; it's not part of the table
+				for (ri = 2; ri < tableRows.length; ri++) {
+					row = [];
+					columns = parseTableRow(tableRows[ri]);
+					for (ci = 0; ci < columns.length; ci++) {
+						column = columns[ci].trim();
+						row.push(column);
+						if (columnWidths[ci] < column.length) {
+							columnWidths[ci] = column.length;
+						}
+					}
+					rows.push(row);
+				}
+
+				tweakedTable = "\\begingroup \\renewcommand{\\arraystretch}{1.5}" + grunt.util.linefeed;
+				tweakedTable += "\\begin{tabularx}{\\textwidth}{ *{" + columnWidths.length+ "}{P} } \\hline" + grunt.util.linefeed;
+				//tweakedTable += "\\noindent\\begin{tabular*}{\\columnwidth}{@{\\extracolsep{\\stretch{1}}}*{"+columnWidths.length+"}{P}@{}}  \\hline"
+				tweakedTable += writeRow(header);
+				tweakedTable += "\\hline" + grunt.util.linefeed;
+				// Churn through each row
+				for (ri = 0; ri < rows.length; ri++) {
+					tweakedTable += writeRow(rows[ri]);
+				}
+				tweakedTable += "\\hline \\end{tabularx} \\endgroup" + grunt.util.linefeed;
+
+				// Check what the trailing character was; if it's a blank line, add some vertical space.
+				// If it's not a blank line, add the character in question with no added space.
+				var trailer = table.match(/\n([^|])/m);
+				if (trailer[1].match(/[\r\n]/)) {
+					tweakedTable += " \\vspace{\\baselineskip} " + trailer[1];
+				} else {
+					tweakedTable += trailer[1];
+				}
+
+				// Replace the table with our tweaked version
+				content = content.replace(table, tweakedTable);
+			}
+		}
+		return content;
 	}
 
 
@@ -177,7 +288,7 @@ module.exports = function(grunt) {
 			},
 			parentGuide: {
 				options: { force: true },
-				src: [parentGuideDir]
+				src: [parentGuideLocation.md.en, parentGuideLocation.md.fr, parentGuideLocation.pdf.en, parentGuideLocation.pdf.fr]
 			}
 		},
 		md2html: {
@@ -189,7 +300,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					flatten: true,
-					src: 'content/*.en.md',
+					src: flattenPages(navJSON.pages).map(function(page) { return p.join('content', page.page + '.en.md'); }),
 					dest: p.join(wwwDir,'en'),
 					ext: '.html'
 				}]
@@ -201,7 +312,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					flatten: true,
-					src: 'content/*.fr.md',
+					src: flattenPages(navJSON.pages).map(function(page) { return p.join('content', page.page + '.fr.md'); }),
 					dest: p.join(wwwDir,'fr'),
 					ext: '.html'
 				}]
@@ -228,7 +339,10 @@ module.exports = function(grunt) {
 		},
 		copy: {
 			media: {
-				files: [{expand: true, src: ['media/**'], dest: wwwDir}]
+				files: [
+					{expand: true, flatten: true, src: [parentGuideLocation.pdf.en, parentGuideLocation.pdf.fr], dest: 'media'},
+					{expand: true, src: ['media/**'], dest: wwwDir},
+				]
 			},
 			assets: {
 				files: [{expand: true, src: ['assets/**'], dest: wwwDir}]
@@ -237,18 +351,13 @@ module.exports = function(grunt) {
 				files: [{expand: true, src: ['css/**'], dest: wwwDir}]
 			}
 		},
-		concat: {
-			parentGuide: {
-				options: { separator: grunt.util.linefeed + grunt.util.linefeed },
-				files: [
-					{src: pgJSON.pages.map(function(v) { return p.join('content', v + '.en.md'); }), dest: parentGuideLocation.en},
-					{src: pgJSON.pages.map(function(v) { return p.join('content', v + '.fr.md'); }), dest: parentGuideLocation.fr}
-				]
-			}
+		spawnPandoc: {
+			en: {},
+			fr: {}
 		},
 		watch: {
 			build: {
-				files: ['Gruntfile.js','config/variables.json','media/media.json','assets/assets.json','content/*.md','templates/*.html','scripts/*'],
+				files: ['Gruntfile.js','config/variables.json','media/media.json','assets/assets.json','content/*.md','content/www/*.md','templates/*.html','scripts/*'],
 				tasks: ['getVariables', 'md2html', 'postProcHtml']
 			},
 			styles: {
@@ -260,12 +369,12 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-md2html');
 	grunt.registerMultiTask('postProcHtml', 'Substitute variables in our generated HTML', function() {
 		var language = this.target, content, frPath, enPath, src;
-		grunt.log.writeln('language = ' + language);
+		var infoBoxMarkup = '<div class="infoBox">$1</div>';
+		var sectionMarkup = {begin: '', end: ''};
 		this.files.forEach(function(file) {
 			src = file.src[0];
 			if (language === 'fr') {
@@ -275,23 +384,40 @@ module.exports = function(grunt) {
 				enPath = src;
 				frPath = swapLanguagePath(enPath,'en','fr');
 			}
-			var content = replaceVariables(src, language, {enPath: enPath, frPath: frPath, fileId: getFileId(src)});
+			var content = replaceVariables(src, language, {enPath: enPath, frPath: frPath, fileId: getFileId(src), infoBoxMarkup: infoBoxMarkup, sectionMarkup: sectionMarkup});
 			grunt.file.write(file.dest, content);
 			grunt.verbose.writeln('Processed "' + file.dest + '".');
 		});
 	});
 	grunt.registerTask('postProcDocMarkdown', 'Substitute variables in our Markdown and generate a docx/PDF', function() {
 		var content;
-		content = replaceVariables(parentGuideLocation.en, 'en');
-		grunt.file.write(parentGuideLocation.en, content);
-		content = replaceVariables(parentGuideLocation.fr, 'fr');
-		grunt.file.write(parentGuideLocation.fr, content);
+		var infoBoxMarkup = function(a,s) { return '\\vspace{8pt} \\setlength{\\fboxsep}{6pt} \\framebox {\\parbox {\\linewidth} {\\textbf{NOTE: }' +
+			texEscape(s).replace(/\r?\n\r?\n/gm, "\\\\\\\\") + // replace double newlines with 4 backslashes, which we define here using 8 backslashes
+			'}} \\vspace{8pt}'; };
+		var sectionMarkup = {begin: '\\noindent\\begin{minipage}{\\linewidth}', end: '\\end{minipage}'};
+		content = replaceVariables(
+			parentGuideLocation.md.en,
+			'en',
+			{ignoreAssets: true, ignoreMedia: true, infoBoxMarkup: infoBoxMarkup, sectionMarkup: sectionMarkup}
+		);
+		content = tweakMarkdownforPandoc(content);
+		grunt.file.write(parentGuideLocation.md.en, content);
+		content = replaceVariables(
+			parentGuideLocation.md.fr,
+			'fr',
+			{ignoreAssets: true, ignoreMedia: true, infoBoxMarkup: infoBoxMarkup, sectionMarkup: sectionMarkup}
+		);
+		content = tweakMarkdownforPandoc(content);
+		grunt.file.write(parentGuideLocation.md.fr, content);
 	});
 	grunt.registerTask('getVariables', function() {
-		// Read the shared variables, media information
-		sharedVariables = grunt.file.readJSON('config/variables.json');
+		// Read the media information
 		media = grunt.file.readJSON('media/media.json');
 		assets = grunt.file.readJSON('assets/assets.json');
+
+		// Update the path info for the parent guide
+		media.parent_guide_en.path = p.basename(parentGuideLocation.pdf.en);
+		media.parent_guide_fr.path = p.basename(parentGuideLocation.pdf.fr);
 
 		var v, mediaInfo, assetInfo, stats, fileSizeInBytes, dimensions;
 
@@ -314,13 +440,15 @@ module.exports = function(grunt) {
 		// Get the media metadata
 		for (v in media) {
 			mediaInfo = media[v];
-			stats = fs.statSync(p.join('./media', mediaInfo.path));
-			if (!stats) {
-				grunt.fail.fatal("Could not retrieve file statistics for " + mediaInfo.path + " in media.json");
+			try {
+				stats = fs.statSync(p.join('./media', mediaInfo.path));
+			} catch (e) {
+				grunt.log.warn("Could not retrieve file statistics for " + mediaInfo.path + " in media.json");
+				stats = {size: 1024};
 			}
 			fileSizeInBytes = stats["size"];
 			// Convert the file size to kB
-			mediaInfo.fileSize = Math.round(fileSizeInBytes / 1024);
+			mediaInfo.fileSize = Math.ceil(fileSizeInBytes / 1024);
 
 			mediaInfo.link = {
 				en: buildMediaLink(mediaInfo, "en"),
@@ -344,9 +472,113 @@ module.exports = function(grunt) {
 			}
 		}
 	});
+
+	function flattenPages(pages, level) {
+		if (!level) {
+			level = 1;
+		}
+		var retval = [];
+		pages.forEach(function(page) {
+			retval.push({page: page.page, concat: page.concat, level: level});
+			if (page.pages) {
+				retval = retval.concat(flattenPages(page.pages, level + 1));
+			}
+		});
+		return retval;
+	}
+
+	var fileSep = grunt.util.linefeed + grunt.util.linefeed;
+	function prepMdForAppend(content, filename) {
+		if (content) {
+			// Clean up trailing whitespace and separate from the preceding document
+			content = content.replace(/[\s\r\n]+$/, '');
+			content += fileSep;
+		}
+		return content;
+	}
+
+	grunt.registerTask('concatParentGuide', function() {
+		var pages = flattenPages(pgJSON.pages);
+		[{dest: parentGuideLocation.md.en, language: 'en'}, {dest: parentGuideLocation.md.fr, language: 'fr'}].forEach(function(o) {
+			var language = o.language, dest = o.dest;
+			var content = '', fileContent = '';
+			pages.forEach(function(page) {
+				content = prepMdForAppend(content);
+
+				fileContent = grunt.file.read(p.join('content', page.page + '.' + language + '.md'));
+				if (page.level > 1) {
+					// Move all headers down a level
+					fileContent = fileContent.replace(/^#/gm, '##');
+				} else {
+					content += "\\newpage" + grunt.util.linefeed + grunt.util.linefeed;
+				}
+				content += fileContent;
+			});
+			grunt.file.write(dest, content);
+		});
+	});
+
+	grunt.registerTask('concatWww', function() {
+		var pages = flattenPages(navJSON.pages);
+		pages.forEach(function(page) {
+			if (page.concat) {
+				var enContent = '', frContent = '';
+
+				page.concat.forEach(function(toConcat) {
+					// Clean up trailing whitespace and separate from the preceding document
+					enContent = prepMdForAppend(enContent);
+					frContent = prepMdForAppend(frContent);
+
+					enContent += grunt.file.read(p.join('content', toConcat + '.en.md'));
+					frContent += grunt.file.read(p.join('content', toConcat + '.fr.md'));
+				});
+
+				grunt.file.write(p.join('content', page.page + '.en.md'), enContent);
+				grunt.file.write(p.join('content', page.page + '.fr.md'), frContent);
+			}
+		});
+	});
+
+	var childProcess = require('child_process');
+
+	grunt.registerMultiTask('spawnPandoc', function() {
+		var target = this.target;
+		if (target) {
+			var pandocMd2Pdf, pandocTex2Pdf, fileContent;
+
+			// Create a dummy file; this makes sure the directory is created before pandoc tries to interact with it
+			grunt.file.write(parentGuideLocation.tex[target], '');
+			grunt.file.write(parentGuideLocation.pdf[target], '');
+
+			// --smart converts straight quotes/apostrophes to curly ones
+			// --latex-engine=xelatex gets accented characters working as expected
+			var cmd = 'pandoc -s -o {dest} {src} --template pandoc.template --toc --smart --latex-engine=xelatex -V geometry:"top=1in, bottom=1in, width=5in"';
+
+			var done = this.async();
+
+			pandocMd2Pdf = childProcess.exec(cmd.replace(/\{src\}/g, parentGuideLocation.md[target]).replace(/\{dest\}/g, parentGuideLocation.pdf[target]),
+				function (error, stdout, stderr) {
+				if (error) {
+					console.log(error.stack);
+					console.log('Error code: '+error.code);
+					console.log('Signal received: '+error.signal);
+				}
+			});
+			pandocMd2Pdf.on('exit', function (code) {
+				if (code != 0) {
+					grunt.verbose.writeln('Pandoc process exited with error code '+code);
+				}
+				done(code == 0);
+			});
+		} else {
+			grunt.fail.fatal("Couldn't determine language for pandoc task.");
+		}
+	});
 	
-	grunt.registerTask('buildDocs', ['getVariables','concat:parentGuide','postProcDocMarkdown']);
+	grunt.registerTask('buildDocs', ['concatParentGuide', 'postProcDocMarkdown', 'spawnPandoc:en', 'spawnPandoc:fr']);
+
+	grunt.registerTask('buildWebsite', ['copy','getVariables','concatWww','md2html','postProcHtml']);
 
 	// Default task(s).
-	grunt.registerTask('default', ['clean','getVariables','copy','md2html','postProcHtml']);
+	grunt.registerTask('default', ['clean','buildDocs','buildWebsite']);
 };

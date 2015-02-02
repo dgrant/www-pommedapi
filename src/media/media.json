@@ -1,20 +1,26 @@
 {
-	"registration_form.en": {
+	"registration_form_en": {
 		"path": "2014_eng_registration_form.pdf",
 		"icon": "pdf",
 		"en": "2014 English Registration Form",
 		"fr": "Formulaire d’inscription 2014 (anglais)"
 	},
-	"registration_form.fr": {
+	"registration_form_fr": {
 		"path": "2014_fr_registration_form.pdf",
 		"icon": "pdf",
 		"en": "2014 French Registration Form",
 		"fr": "Formulaire d’inscription 2014 (français)"
 	},
-	"parent_guide.en": {
-		"path": "2014_en_parent_guide.pdf",
+	"parent_guide_en": {
+		"path": "added_by_build",
 		"icon": "pdf",
 		"en": "Parent Guide (English)",
-		"fr": "Parent Guide (English)"
+		"fr": "Guide des parents (anglais)"
+	},
+	"parent_guide_fr": {
+		"path": "added_by_build",
+		"icon": "pdf",
+		"en": "Parent Guide (French)",
+		"fr": "Guide des parents (français)"
 	}
 }

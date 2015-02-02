@@ -1,25 +1,48 @@
-# Postes administratifs
+# Le conseil d’administration (C.A.)
 
-Les postes administratifs seront officiellement élus lors de l'Assemblée générale des parents en septembre. Tous les autres postes sont offerts sur la base du premier arrivé premier servi. Les parents qui ne se sont pas encore inscrits à un poste de comité avant la réunion de parents en septembre seront tenus de le faire avant la fin de cette réunion.
+La prématernelle Pomme d'api est gouvernée par la constitution de la Société Pomme d'api et est présidée par un conseil d’administration. Les postes de ce conseil sont tenus par des parents bénévoles dont les enfants sont inscrits à Pomme d'api et sont élus à l’assemblée générale annuelle des parents en septembre.
 
-__Postes élus du conseil d'administration (élections à l’Assemblée générale des parents en Septembre):__
+## Structure
 
-__PRÉSIDENT:__ (bilingue) supervise toutes les activités de l'école et de ses comités, préside les réunions mensuelles du conseil d'administration et toutes les assemblées générales, embauche les employés.
+Le conseil d’administration (C.A.) est constitué d'un/e président(e) , vice président(e), secrétaire, trésorier(ère) et de plusieurs directeurs(trices) déterminés et élus par les membres de l’assemblée générale au début de l'année scolaire.
 
-__VICE-PRÉSIDENT:__ (bilingue) responsable des assurances, des demandes de subventions et de la liaison avec les responsables de l'église.
+Les membres du conseil sont élus à l'assemblé générale annuelle en Septembre. Si deux membres désirent le même poste, une seule personne peut être élue à l'AGM ou les deux personnes peuvent décider de partager un même poste.
 
-__TRÉSORIER:__ responsable de la supervision et du contrôle des états bancaires et financiers.
+Le conseil devrait idéalement inclure des nouveaux parents et des parents de l'année précédente pour faciliter la continuité et transférer l'expérience.
 
-__SECRÉTAIRE:__ rédige le procès-verbal lors des réunions du conseil d'administration et distribue celui-ci aux parents par courrier électronique et document imprimé.
+## Responsabilités du conseil
 
-__DIRECTEUR DES PARENTS BÉNÉVOLES:__ établit et assure le lien avec les comités de travail, veille à ce que tous les parents participent et à ce que toutes les tâches soient complétées.
+* l'administration de l'école
+* les politiques de l'école
+* les finances de l'école (avec l'aide d'un comptable engagé)
+* le recrutement des employés
+* l'organisation de l'assemblée générale et la réunion des parents du printemps
 
-__DIRECTEUR DU FINANCEMENT:__ développe et adopte des mesures afin d’accroître les fonds pour nos activités scolaires.
+<!--infoBox-->
+Les professeurs s'adressent au conseil. Toutefois, tout litige concernant les professeurs doit être examiné par le président(e) ou vice président(e) dans une rencontre confidentielle et non aux réunions de Conseil d’administration.
+<!--/infoBox-->
 
-__REGISTRAIRE:__ maintient une base de données des élèves actuels et des familles qui prévoient s’inscrire, informe les représentants de classe, secrétaire et directeur des technologies des nouveaux et anciens élèves.
+Le Conseil est légalement responsable pour l'école et doit remplir tous les documents légaux et documents connexes.
 
-__DIRECTEUR DE LA PUBLICITÉ:__ maintient et améliore le profil de Pomme d'Api dans la communauté grâce à la publicité; supervise notre journée Portes Ouvertes.
+## Réunions
 
-__FRANCOPHONE DE LIAISON:__ communique avec les ressources communautaires francophones extérieures et les parents; aide à la traduction française en cas de besoin.
+Le conseil se réunit tous les mois pour discuter tout problème qui concerne l'école. Les parents qui désirent s'adresser au conseil peuvent le faire en avisant le secrétaire qu'ils veulent ajouter un item à l'agenda et en décrivant la nature du problème soulevé .
 
-__DIRECTEUR DES TECHNOLOGIES:__ maintient et améliore les aspects technologiques du fonctionnement de la pré-maternelle allant du télécopieur au réaménagement du site web. Supervise également la photographie et l’archivage de vidéos.
+Le conseil pourra demander à ceux qui s'adressent au conseil de quitter la réunion après que la discussion de leur item soit terminée si le conseil préfère délibérer à huis clos.
+
+Les réunions du conseil sont résumées dans les contes rendus qui sont distribuées aux membres du Conseil d’administration, aux professeurs, à tous les parents et au comptable. Toute discussion de nature sensible ne sera pas détaillée dans les minutes d’assemblée. Toutefois, il sera noté dans les minutes que le conseil aura discuté de points de nature sensible, sans donner plus de détail. 
+
+## Postes au Conseil d’administration (C.A.)
+
+Voici les postes du Conseil d’administration de Pomme d'api pour l’année {% schoolYear %}:
+
+* Président(e)
+* Vice-Président(e)
+* Trésorier(ère)
+* Secrétaire
+* Directeur(trice) de la participation des parents
+* Directeur(trice) des levées de fonds
+* Registraire
+* Directeur(trice) de la publicité 
+* Directeur(trice) des fêtes et évènements spéciaux
+* Agent(e) de liaison francophone

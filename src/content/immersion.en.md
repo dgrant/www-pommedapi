@@ -2,7 +2,8 @@
 
 ## First Year
 
-### Two Day Class: T/TH, 9:15 – 11:45 am
+### Two-Day Class: T/Th, 9:15 – 11:45 am
+
 For many children, their first year at Pomme d’Api is their first experience in a group setting and in a structured environment away from home. Few of these children have been exposed to the French language and fewer have francophone support at home.
 
 At the beginning of the program, we usually have a mix of 2 ½ to 3 ½ year olds. The first three months of the program (and through the rest of the year), we will work on bringing a harmonious atmosphere in the classroom, working on separation anxiety, problem solving, respect for one another (sharing, taking turns, cleaning after oneself etc...), and following routines. This is done through a cooperative play environment.
@@ -16,7 +17,7 @@ As the school year progresses English is slowly replaced by French, so that at t
 
 ## Second Year
 
-### Three Day Class: M/W/F,  9:15 – 11:45 am
+### Three-Day Class: M/W/F,  9:15 – 11:45 am
 
 In their second year at Pomme d’Api, children continuing from the first year programme will know their teachers and most of their friends. They are familiar with the activities and routines at Pomme d'Api. Most importantly, their level of development has taken a big step within a year. At 4 years old, their language is rich, their imagination sparkling, and their attention span lasts much longer. They are eager to learn, and to discover new things!
 
@@ -27,4 +28,4 @@ This year, French in the classroom will be used more often and more casually, to
 
 We introduce the "programme de francisation" Paul et Suzanne. This program is also offered in the Francophone program, to develop proper syntax and concepts of the language. By the end of the second year, children are able to follow classroom directions in French, to understand short stories, and to speak French vocabulary when asked.
 
-__At Pomme d’Api, we aim to provide a happy & fun environment through which children can explore and learn. If you have any more questions or wish to set up an appointment to visit the school, please do not hesitate to contact the Registrar at {%telephone_number%}.__
+__At Pomme d’Api, we aim to provide a happy & fun environment through which children can explore and learn. If you have any more questions or wish to set up an appointment to visit the school, please do not hesitate to contact the Registrar at {%telephoneNumber%}.__

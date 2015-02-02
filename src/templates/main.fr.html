@@ -5,7 +5,7 @@
   <title>Pomme d'Api</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="../css/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
           <span class="postal-code">V5P 1N2</span>
         </div>
         <div class="phone-numbers">
-          <span class="phone-label">Téléphone:</span> <span class="phone-number">{%telephone_number%}</span>
+          <span class="phone-label">Téléphone:</span> <span class="phone-number">{%telephoneNumber%}</span>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
     <div class="sidebar">
       {% @show_menu %}
       <div class="btn-group language-chooser">
-        <span class="btn active">Français</span><a href="{% en_path %}" class="btn">English</a>
+        <span class="btn active">Français</span><a href="{% @en_path %}" class="btn">English</a>
       </div>
     </div>
     <div class="content">

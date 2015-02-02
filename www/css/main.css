@@ -5,14 +5,14 @@ html {
 body {
 	margin: 5px;
 	background: #c40807;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Lato,Helvetica,Arial,sans-serif;
 	font-size: 14px;
-	line-height: 1.5em;
+	line-height: 1.2;
 }
 
 p {
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
 }
 ul {
 	margin-top: 1em;
@@ -59,6 +59,7 @@ input[type="text"], input[type="number"], input[type="email"] {
     border: 1px solid #CCCCCC;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    padding: 0 5px;
     height: 1.5em;
 }
 
@@ -69,8 +70,27 @@ input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus 
 }
 
 input {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Lato,Helvetica,Arial,sans-serif;
 	font-size: 1em;
+}
+
+table {
+	width: 100%;
+	background: white;
+}
+thead, tbody {
+	position: relative;
+}
+thead:after, tbody:after {
+	display: block;
+	content: '';
+	position: absolute;
+	height: 1px;
+	bottom: 0; left: 0; right: 0;
+	background: #999;
+}
+th {
+	text-align: left;
 }
 
 .clearfix {
@@ -208,13 +228,16 @@ input {
 }
 
 h1, h2, h3, .tagline {
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: Lato,Helvetica,Arial,sans-serif;
 }
 
 h1 {
 	font-size: 2em;
-	margin-top: 1em;
-	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+h1:first-child {
+	margin-top: 0.5em;
 }
 
 h2 {
@@ -281,6 +304,24 @@ h3 {
 }
 .btn-group .btn.active:hover {
 	box-shadow: none;
+}
+
+.infoBox {
+	border: 1px solid #aaa;
+	padding: 10px;
+}
+
+.infoBox p:first-child {
+	margin-top: 0;
+}
+
+.infoBox p:last-child {
+	margin-bottom: 0;
+}
+
+td {
+	padding: 5px;
+	vertical-align: top;
 }
 
 @media (max-width: 540px) {

@@ -26,4 +26,4 @@ Au cours de cette année, le français sera utilisé plus souvent et plus sponta
 
 Nous introduisons le «programme de francisation» Paul et Suzanne qui est aussi offert dans le programme francophone afin de développer la syntaxe et les concepts propres à la langue française. À la fin de la seconde année, les enfants sont capables de suivre les consignes de classe en français, de comprendre des histoires courtes et d’utiliser du vocabulaire français lorsque demandé.
 
-__À Pomme d’Api, nous voulons fournir un environnement accueillant et amusant dans lequel les enfants peuvent explorer et apprendre. Si vous avez des questions ou si vous souhaitez prendre rendez-vous pour visiter l’école, n’hésitez pas à contacter le Registraire au {%telephone_number%}.__
+__À Pomme d’Api, nous voulons fournir un environnement accueillant et amusant dans lequel les enfants peuvent explorer et apprendre. Si vous avez des questions ou si vous souhaitez prendre rendez-vous pour visiter l’école, n’hésitez pas à contacter le Registraire au {%telephoneNumber%}.__

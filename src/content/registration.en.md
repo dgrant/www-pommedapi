@@ -1,26 +1,25 @@
-# Registration & Fees
+# Registration
 
-Registration for the 2014/2015 school year is now closed.
-
-Pomme d'Api Registration for each new school year begins at the annual Open House. The Open House for the 2015/2016 school year will be held in February 2015.  Our Open House is where we begin accepting applications for all classes.
-
-Registration is on a first-come, first serve basis. However, priority is given, in order, to:
+Registration is on a first-come, first-served basis. However, priority is given in the following
+order:
 
 1. Returning students
-2. Siblings of students (including students previously registered at Pomme d'Api)
+2. Siblings of current students and siblings of previous students
 3. General registration
 
-If you have any questions regarding registration, please feel free to email us at {%registrar_email_link%} or by calling the school at {%telephone_number%}.
+If you are informed that there is a space for your child, complete and return the registration
+form along with a tuition deposit of one month’s tuition and a non-refundable registration fee
+of {%registrationFee%}. This will ensure that your child’s space is reserved for him/her.
 
-Please provide the following information:
+If there are no spaces available, you have the option to put your child’s name on the wait
+list. Those on the waiting list are not required to submit the registration fee or tuition deposit
+until a space has become available.
 
-* Your child's full name
-* Your name, phone number, and email address
-* Your child's date of birth
-* The class(es) that you would like to enroll in.
+Most students start at the preschool at the beginning of the school year in September, but
+students may enter the two-day immersion class until December 1, and the three-day
+immersion and both francophone classes until February 1, if space is available.
+The Board may occasionally approve a registration beyond the deadline, determined on a case-by-case
+basis with the approval of the teachers.
 
-The registrar will let you know if there are spaces available. If spaces are available, you will be requested to complete the registration form and provide tuition deposit and a non-refundable registration fee ({%registration_fee%}), in order to secure your spot.
-
-If classes are full, we encourage you to place your child on the waitlist, at no charge. Once a space becomes available, families on the waitlist are called in priority order and offered the opportunity to register.
-
-2 Day students may still register once school starts, space permitting, up until December 1st (February 1st for the 3 & 4 day programs). _The Board may approve a registration beyond the December 1st deadline. This will be determined on a case by case basis with the approval of the teachers._
+If you have any questions regarding registration, please feel free to email us at
+{%registrarEmailLink%} or by calling the school at {%telephoneNumber%}.

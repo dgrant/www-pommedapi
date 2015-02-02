@@ -1,25 +1,63 @@
-# Board positions
+# The Executive Board
 
-The Board Positions are officially elected at the General Parent Meeting in September. All other positions are offered on a first-come, first-filled basis. Those parents who have not yet signed up for a committee position before the September Parent Meeting will be required to do so before the end of that meeting. 
+Pomme d’Api is governed by the constitution of the Pomme d’Api Society which is presided
+over by the Executive Board. Board positions are filled by election, and are held by parent
+volunteers whose children are enrolled at Pomme d’Api.
 
-__Elected Board Positions (election at General Parent Meeting in September):__
+## Structure
 
-__PRESIDENT:__ (bilingual) oversees all activities of school & its committees, chairs monthly board meetings and all General meetings, hires employees
+The Executive Board consists of a President, Vice President, Secretary, Treasurer, and several
+Directors as determined by the Society’s members at the start of each year.
 
-__VICE-PRESIDENT:__ (bilingual) responsible for insurance, grant applications and liaison with church contacts
+Board members are voted in at the AGM in September. If two people vie for one position, one
+may be elected at the AGM, or a compromise may be reached in which two people share a
+single Board position.
 
-__TREASURER:__ responsible for overseeing & monitoring banking and financial statements
+The Board should ideally include both new and returning parents, to help with continuity and
+the transfer of past experience.
 
-__SECRETARY:__ takes minutes at board meetings and distributes them to parents by email and paper
+## Responsibilities
 
-__PARENT PARTICIPATION DIRECTOR:__ establishes and liaises with working committees, ensures that all parents participate and all tasks are completed
+The Board has the following responsibilities:
 
-__DIRECTOR OF FUNDRAISING:__ develops and enacts measures to increase funds for our school activities.
+* the administration of the preschool
+* the policies of the preschool
+* the finances of the preschool (with the help of a hired accountant)
+* the staffing of the preschool
+* organization of the AGM and spring parent meeting
 
-__REGISTRAR:__ maintains a database for current students and future students, informs class reps, secretary & webmaster of new & departing students
+<!--infoBox-->
+The teachers report to the Board. However, any concerns regarding teachers must
+be raised with the President or Vice President in a confidential meeting, not a Board meeting.
+<!--/infoBox-->
 
-__DIRECTOR OF PUBLICITY:__ maintains and improves Pomme d’Api’s profile in the community through advertising; oversees our Spring Open House
+The Board is legally responsible for the preschool, and must file all legal and related documents.
 
-__FRANCOPHONE LIAISON:__ communicates with external Francophone community resources and parents and assists with French translation when needed
+## Meetings
 
-__TECHNOLOGY DIRECTOR:__ maintains and improves the technological aspects of running the preschool.  From ensuring the fax machine is working to maintaining the website.  This role also oversees the photography and video archiving.
+The Board meets monthly to discuss all issues that concern the preschool. Parents who would
+like to address the Board can do so by advising the Secretary that they would like an item to be
+added to the agenda, and stating the nature of their concern.
+
+Non-Board members who address the Board may be asked to leave the meeting after their
+address is finished if the Board has sensitive issues to discuss.
+
+Board meetings are summarized in the minutes and are distributed to all parents, teachers, and
+the accountant. Any discussions that are sensitive in nature will not be detailed in the minutes;
+however, it will be noted that the Board did discuss sensitive issues, without giving further
+detail.
+
+## Executive Board Positions
+
+These are Pomme d’Api’s executive Board positions for {% schoolYear %}:
+
+* President
+* Vice President
+* Treasurer
+* Secretary
+* Parent Participation Director
+* Director of Fundraising
+* Registrar
+* Director of Publicity
+* Partying Director
+* Francophone Liaison

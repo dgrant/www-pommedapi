@@ -1,24 +1,15 @@
-# Inscription et frais
+# Inscription
 
-La période d’inscriptions de Pomme d'Api pour la prochaine année scolaire commence lors de la journée annuelle Portes Ouvertes. La journée Portes Ouvertes pour l’année scolaire 2015-2016 se tiendra en février 2015. À compter de cette date, nous acceptons les inscriptions pour toutes les classes.
+L’inscription se fait sur la base du premier arrivé, premier servi. Cependant une priorité est accordée aux élèves dans l’ordre suivant:
 
-L’inscription se fait selon le principe du premier arrivé, premier servi. Cependant, la priorité est donnée, dans l’ordre, aux:
+1. Pour les élèves qui retournent à Pomme d'api
+2. Pour les frères et soeurs des élèves couramment inscrits et des anciens(nes) élèves 
+3. Inscription générale
 
-1. Élèves déjà inscrits
-2. Frères et sœurs des élèves (incluant les élèves inscrits antérieurement à Pomme d'Api)
-3. Inscriptions générales
+Lorsque vous recevez la confirmation d’une place disponible pour votre enfant, veuillez compléter et retourner le formulaire d’inscription avec un acompte des frais scolaires pour une mois et des frais d’inscription non-remboursables de {% registrationFee %}. Cela assure une place réservée pour votre enfant.
 
-Pour toutes questions concernant les inscriptions, veuillez nous contacter par courriel à {%registrar_email_link%} ou par téléphone à l’école au {%telephone_number%}.
+Au cas où il n’ y a pas de place disponible, vous pouvez inscrire votre enfant sur une liste d’attente. Les parents dont les enfants sont sur la liste d’attente n’ont pas à payer de frais d’inscription ou l’acompte pour les frais scolaires jusqu'à ce qu’une place devienne disponible.
 
-Veuillez fournir les informations suivantes:
+La majorité des élèves commencent à Pomme d'api au début de l'année scolaire en septembre, mais les élèves peuvent entrer dans la classe d’immersion de deux jours jusqu’au 1er décembre et jusqu’au 1er février dans la classe d’immersion de trois jours ainsi que dans les deux classes du programme francophone, s’il y a des places disponibles. Dans certains cas, avec l’approbation des professeurs, le conseil peut approuver une entrée après la date limite. 
 
-* Le nom complet de l’enfant
-* Votre nom, numéro de téléphone et adresse courriel
-* La date de naissance de votre enfant
-* La classe dans laquelle vous souhaitez inscrire votre enfant.
-
-Le registraire vous indiquera si des places sont disponibles. Si oui, vous devrez compléter le formulaire d’inscription et fournir le dépôt pour les droits de scolarité ainsi que les frais d’inscription non-remboursables ({%registration_fee%}) afin de conserver votre place.
-
-Si les groupes sont complets, nous vous encourageons à inscrire votre enfant sur la liste d’attente et ce, sans frais. Lorsqu’une place est disponible, les familles en attente d’une place sont contactées par ordre d’inscription et ont l’opportunité d’inscrire leur enfant.
-
-Il est encore possible d’inscrire un élève au programme 2 jours après le début des classes, tant que des places sont disponibles et ce, jusqu’au 1<sup>er</sup> décembre (1<sup>er</sup> février pour les programmes 3 et 4 jours). _Le conseil d’administration pourrait accepter une inscription au-delà de la date limite du 1<sup>er</sup> décembre. Chaque cas sera évalué individuellement avec l’approbation des éducatrices._
+Pour toutes questions concernant les inscriptions, veuillez nous contacter par courriel à {%registrarEmailLink%} ou par téléphone à l’école au {%telephoneNumber%}.

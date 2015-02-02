@@ -1,27 +1,31 @@
 ﻿{
 	"pages" : [
-		{"page": "index", "en": "Pomme d'Api", "fr": "Pomme d'Api"},
-		{"page": "about-us", "en": "About us", "fr": "À propos de nous", "pages": [
+		{"page": "www/_build/index", "concat": ["www/open_house_2015","www/index"], "en": "Pomme d'Api", "fr": "Pomme d'Api", "pages": [
+			{"page": "history", "en": "History", "fr": "Notre histoire"},
 			{"page": "philosophy", "en": "Our philosophy", "fr": "Notre philosophie"},
 			{"page": "child-development", "en": "Child development", "fr": "Développement de l’enfant"},
 			{"page": "learning-languages", "en": "Learning Languages", "fr": "Apprendre les langues"}
 		]},
 		{"page": "teachers", "en": "Our teachers", "fr": "Nos éducatrices"},
 		{"page": "programs", "en": "Our programs", "fr": "Nos programmes", "pages": [
+			{"page": "methodology", "en": "Methodology", "fr": "Methodologie"},
 			{"page": "immersion", "en": "Immersion program", "fr": "Programme d’immersion"},
 			{"page": "francophone", "en": "Francophone program", "fr": "Programme francophone"}
 		]},
 		{"page": "registration", "en": "Registration and fees", "fr": "Inscription et frais", "pages": [
 			{"page": "tuition", "en": "Tuition", "fr": "Droits de scolarité"},
-			{"page": "faq", "en": "FAQ", "fr": "Foire aux questions"}
+			{"page": "eligibility", "en": "Eligibility", "fr": "Eligibilité"},
+			{"page": "withdrawal", "en": "Withdrawal", "fr": "Retrait"},
+			{"page": "www/faq", "en": "FAQ", "fr": "Foire aux questions"}
 		]},
 		{"page": "participation", "en": "Parent participation", "fr": "La participation des parents"},
-		{"page": "current-students", "en": "Current students", "fr": "Étudiants inscrits", "pages": [
-			{"page": "positions", "en": "Parent positions", "fr": "Postes des parents bénévoles"},
-			{"page": "board", "en": "Board positions", "fr": "Postes administratifs"},
-			{"page": "documents", "en": "Parent guide", "fr": "Documents"}
+		{"page": "www/_build/current_students", "concat": ["www/current_students","absences","sickness"], "en": "Current students", "fr": "Étudiants inscrits", "pages": [
+			{"page": "holidays", "en": "Holidays", "fr": "Congés fériés"},
+			{"page": "www/_build/volunteer", "concat": ["volunteer", "volunteer_details"], "en": "Parent positions", "fr": "Postes des parents bénévoles"},
+			{"page": "www/_build/board", "concat": ["board", "board_details"], "en": "Board positions", "fr": "Postes administratifs"},
+			{"page": "www/documents", "en": "Parent guide", "fr": "Guide des parents"}
 		]},
-		{"page": "contact", "en": "Contact us", "fr": "Contactez-nous"},
-		{"page": "location", "en": "Find us", "fr": "Nous trouver"}
+		{"page": "www/contact", "en": "Contact us", "fr": "Contactez-nous"},
+		{"page": "www/location", "en": "Find us", "fr": "Nous trouver"}
 	]
 }

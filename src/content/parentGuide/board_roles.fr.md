@@ -1,0 +1,3 @@
+# Annexe B: Postes au Conseil d’Administration (C.A.)
+
+Vous trouverez ci-joint la liste et descriptions de tâches des postes au Conseil d’Administration pour l’année {% schoolYear %}. Ces postes peuvent changer d’année en année selon les besoins de l’école prématernelle qui change et évolue avec le temps. Cependant le conseil d’Administration doit toujours avoir un(e) Président(e ), un(e) Vice-Président(e), un(e) secrétaire et un(e) trésorier(ère).

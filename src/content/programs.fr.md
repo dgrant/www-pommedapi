@@ -1,9 +1,19 @@
-# Nos programmes
+# Description des programmes
 
-La pré-maternelle Pomme d'Api offre une éducation préscolaire qui favorise le développement social et cognitif des jeunes enfants tout en enseignant et encourageant l’utilisation de la langue française. Notre objectif est de rendre la première expérience scolaire de nos enfants la plus agréable possible. Nos programmes fournissent un environnement stimulant et accueillant dans lequel les enfants peuvent goûter au plaisir d’explorer le monde fascinant qui les entoure!
+Pomme d'api offre quatre programmes différents - deux programmes d’immersion et deux programmes francophones. Les deux programmes d’immersion sont complètement séparés, mais les deux programmes francophones se passent en même temps et généralement, les enfants sont regroupés dans une seule classe; cependant les élèves plus âgés ont une classe additionnelle par semaine.
 
-Notre orientation vise à promouvoir la coopération, appuyer l’autonomie et encourager le développement de l’expression individuelle de chaque enfant. Nous reconnaissons que des limites doivent être mises en place et renforcées; si nécessaire, nous utilisons la diversion. Notre but est de façonner le comportement de manière positive et éducative. Nous aidons les enfants à apprendre à partager, les encourageons à exprimer leurs sentiments, nous favorisons la participation en groupe et mettons en valeur la considération des autres et le respect de chacun.
+## Le programme d’immersion de deux jours
 
-Le français est introduit le plus naturellement possible grâce aux deux programmes de langue; l’immersion française et le programme francophone.
+Le programme d’immersion de deux jours s’adresse aux enfants du niveau première année de prématernelle. Les enfants ont entre 32-48 mois, et les activités et le langage sont adaptés à ce niveau de développement. Le français est introduit, mais l’anglais est utilisé quand nécessaire.
 
-Pour la portion langue du programme de la pré-maternelle Pomme d’Api, le rôle du programme d’immersion française est d’enseigner le français aux enfants non francophones. Le but du programme francophone, pour sa part, est de consolider la langue et de développer le vocabulaire chez les enfants qui comprennent déjà le français.
+## Le programme d’immersion de trois jours
+
+Le programme d’immersion de trois jours s’adresse aux enfants qui ont d’abord fait le programme d’immersion de deux jours, et aussi aux nouveaux étudiants qui auront au moins 4 ans le 31 décembre de l'année dans laquelle ils commencent le programme. L’utilisation de français augmente durant l'année
+
+## Le programme francophone de trois jours
+
+Le programme francophone de trois jours s’adresse aux les enfants qui ont entre 3-5 ans provenant de familles francophones. Le programme est entièrement en français.
+
+## Le programme francophone de quatre jours
+
+Le programme francophone de quatre jours d’adresse aux enfants qui ont entre 4-5 ans, provenant de familles francophones. Ce programme est dispensé en même temps que le programme francophone de trois jours, mais avec une classe additionnelle par semaine. Cette classe additionnelle permet aux professeurs de faire des activités plus appropriées pour les enfants plus âgés.

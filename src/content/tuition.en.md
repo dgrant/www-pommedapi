@@ -1,27 +1,20 @@
-# Tuition
+# Class schedule and fees
 
-Tuition fees listed below are for 2013/2014.  Rates are subject to change.
+Our class schedule is shown below. Immersion classes are held in the mornings and
+francophone classes in the afternoons.
 
-## Immersion Program
+|                         | Monday | Tuesday | Wednesday | Thursday | Friday |
+| ---                     | --     | --      | --        | --       | --     |
+| Morning (9:15 – 11:45)  | Three-day immersion | Two-day immersion | Three-day immersion | Two-day immersion | Three-day immersion |
+| Afternoon (1:00 – 3:30) | Three-day and four-day francophone | NO CLASSES (teacher prep time) | Three-day and four-day francophone | Four-day francophone | Three-day and four-day francophone |
 
-__2-Day French Immersion Program (For children 3 to 4 yrs old)__  
-Tuesday and Thursday  
-9:15 to 11:45 AM  
-{%two_day_immersion_monthly_fee%} per month (tuition & supply fee)  
+The table below shows the class schedule and monthly fee for each of our four programs.
 
-__3-Day French Immersion Program (For children 4 to 5 yrs old)__  
-Monday, Wednesday, and Friday  
-9:15 to 11:45 AM  
-{%three_day_immersion_monthly_fee%} per month (tuition & supply fee)  
-
-## Francophone Program
-
-__3-Day Programme Francophone (For children 3 to 4 yrs old)__  
-Monday, Wednesday, and Friday  
-1:00 to 3:30 PM  
-{%three_day_francophone_monthly_fee%} per month (tuition & supply fee)  
-
-__4-Day Programme Francophone (For children 4 to 5 yrs old)__  
-Monday, Wednesday, Thursday & Friday  
-1:00 to 3:30 PM  
-{%four_day_francophone_monthly_fee%} per month (tuition & supply fee)  
+| Program               | Schedule                                        | Monthly fee                       |
+| -------               | --------                                        | -----------                       |
+| Two-day immersion     | Tuesday, Thursday 9:15-11:45 am                 | {%twoDayImmersionMonthlyFee%}     |
+| Three-day immersion   | Monday, Wednesday, Friday 9:15-11:45 am         | {%threeDayImmersionMonthlyFee%}   |
+| Three-day francophone | Monday, Wednesday, Friday 1:00-3:30 pm          | {%threeDayFrancophoneMonthlyFee%} |
+| Four-day francophone¹ | Monday, Wednesday, Thursday, Friday 1:00-3:30 pm| {%fourDayFrancophoneMonthlyFee%}  |
+¹ For 4-year-olds only. Overlaps with the three-day francophone class, with an extra class on
+Thursdays.

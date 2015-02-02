@@ -1,27 +1,18 @@
-# Droits de scolarité
+# L’horaire de classe et les frais
 
-Les montants des droits de scolarité suivants sont pour 2014/2015.  Les tarifs sont sujets à changements.
+Voici notre horaire: Les classes d'immersion ont lieu le matin et les classes francophone durant l'après midi.
 
-## Programme d’immersion
+| | lundi | mardi | mercredi | jeudi | vendredi |
+| --- | -- | -- | -- | -- | -- |
+| Matin (9:15 – 11:45) | Classe d’immersion de trois jours | Classe d’immersion de deux jours | Classe d’immersion de trois jours | Classe d’immersion de deux jours | Classe d’immersion de trois jours |
+| Après midi (1:00 – 3:30) | Classe francophone de trois et quatre jours | PAS DE CLASSES (temps de préparation pour les profs) | Classe francophone de trois et quatre jours | Classe francophone de quatre jours | Classe francophone de trois et quatre jours |
 
-__Programme d’immersion française 2 jours (enfants de 3 à 4 ans)__  
-Mardi et jeudi  
-9h15 à 11h45  
-{% two_day_immersion_monthly_fee %} par mois (scolarité & matériel)  
+Voici le tableau de l’horaire de classe et les frais de scolarité mensuels pour chacun de nos quatre programmes.
 
-__Programme d’immersion française 3 jours (enfants de 4 à 5 ans)__  
-Lundi, mercredi et vendredi  
-9h15 à 11h45  
-{% three_day_immersion_monthly_fee %} par mois (scolarité & matériel)  
-
-##Programme francophone
-
-__Programme francophone 3 jours (enfants de 3 à 4 ans)__  
-Lundi, mercredi et vendredi  
-13h00 à 15h30  
-{% three_day_francophone_monthly_fee %} par mois (scolarité & matériel)  
-
-__Programme francophone 4 jours (enfants de 4 à 5 ans)__  
-Lundi, mercredi, jeudi et vendredi  
-13h00 à 15h30  
-{% four_day_francophone_monthly_fee %} par mois (scolarité & matériel)  
+| Programme | Horaire | Frais de scolarité mensuel |
+| --- | --- | --- |
+| immersion deux jours | mardi, jeudi 9:15-11:45 am | {%twoDayImmersionMonthlyFee%} |
+| immersion trois jours | lundi, mercredi, vendredi 9:15-11:45 am | {%threeDayImmersionMonthlyFee%} |
+| francophone trois jours | lundi, mercredi, vendredi 1:00-3:30 pm | {%threeDayFrancophoneMonthlyFee%} |
+| francophone quatre jours¹ | lundi, mercredi, jeudi, vendredi 1:00-3:30 pm | {%fourDayFrancophoneMonthlyFee%} |
+¹ Pour les enfants de quatre ans seulement. En même temps que la classe francophone de trois jours, avec une classe additionnelle les jeudis.

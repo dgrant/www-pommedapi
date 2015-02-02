@@ -1,3 +1,42 @@
 {
-	"pages" : ["index","about-us","contact","current-students"]
+	"pages" : [
+		{"page": "parentGuide/intro", "pages": [
+			{"page": "history"},
+			{"page": "philosophy"},
+			{"page": "methodology"}
+		]},
+		{"page": "parentGuide/programs_intro", "pages": [
+			{"page": "tuition"},
+			{"page": "programs"},
+			{"page": "eligibility"},
+			{"page": "registration"},
+			{"page": "payment"},
+			{"page": "withdrawal"}
+		]},
+		{"page": "gradual_entry"},
+		{"page": "health", "pages": [{"page": "sickness"}]},
+		{"page": "emergency"},
+		{"page": "participation", "pages": [
+			{"page": "volunteer"},
+			{"page": "parentGuide/volunteer_detail_ref"},
+			{"page": "board"},
+			{"page": "parentGuide/board_detail_ref"}
+		]},
+		{"page": "parentGuide/general", "pages": [
+			{"page": "absences"},
+			{"page": "other_programs"},
+			{"page": "celebrations"},
+			{"page": "communications"},
+			{"page": "discipline"},
+			{"page": "pickup_dropoff"},
+			{"page": "field_trips"},
+			{"page": "holidays"},
+			{"page": "teacher_student_ratio"},
+			{"page": "complaints"},
+			{"page": "event_attendance"}
+		]},
+		{"page": "parentGuide/conclusion"},
+		{"page": "parentGuide/volunteer_roles", "pages": [{"page": "volunteer_details"}]},
+		{"page": "parentGuide/board_roles", "pages": [{"page": "board_details"}]}
+	]
 }
