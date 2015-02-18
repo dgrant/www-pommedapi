@@ -12,7 +12,7 @@
 			{"page": "immersion", "en": "Immersion program", "fr": "Programme d’immersion"},
 			{"page": "francophone", "en": "Francophone program", "fr": "Programme francophone"}
 		]},
-		{"page": "registration", "en": "Registration and fees", "fr": "Inscription et frais", "pages": [
+		{"page": "www/_build/registration", "concat": ["www/registration_forms","registration"], "en": "Registration and fees", "fr": "Inscription et frais", "pages": [
 			{"page": "tuition", "en": "Tuition", "fr": "Droits de scolarité"},
 			{"page": "eligibility", "en": "Eligibility", "fr": "Eligibilité"},
 			{"page": "withdrawal", "en": "Withdrawal", "fr": "Retrait"},

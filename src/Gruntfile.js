@@ -547,7 +547,6 @@ module.exports = function(grunt) {
 			var pandocMd2Pdf, pandocTex2Pdf, fileContent;
 
 			// Create a dummy file; this makes sure the directory is created before pandoc tries to interact with it
-			grunt.file.write(parentGuideLocation.tex[target], '');
 			grunt.file.write(parentGuideLocation.pdf[target], '');
 
 			// --smart converts straight quotes/apostrophes to curly ones
