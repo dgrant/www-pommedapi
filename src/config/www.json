@@ -1,6 +1,6 @@
 ﻿{
 	"pages" : [
-		{"page": "www/_build/index", "concat": ["www/open_house_2015","www/index"], "en": "Pomme d'Api", "fr": "Pomme d'Api", "pages": [
+		{"page": "www/_build/index", "concat": ["www/index"], "en": "Pomme d'Api", "fr": "Pomme d'Api", "pages": [
 			{"page": "history", "en": "History", "fr": "Notre histoire"},
 			{"page": "philosophy", "en": "Our philosophy", "fr": "Notre philosophie"},
 			{"page": "child-development", "en": "Child development", "fr": "Développement de l’enfant"},
@@ -23,7 +23,7 @@
 			{"page": "holidays", "en": "Holidays", "fr": "Congés fériés"},
 			{"page": "www/_build/volunteer", "concat": ["volunteer", "volunteer_details"], "en": "Parent positions", "fr": "Postes des parents bénévoles"},
 			{"page": "www/_build/board", "concat": ["board", "board_details"], "en": "Board positions", "fr": "Postes administratifs"},
-			{"page": "www/documents", "en": "Parent guide", "fr": "Guide des parents"}
+			{"page": "www/documents", "en": "Parent guides", "fr": "Guides des parents"}
 		]},
 		{"page": "www/contact", "en": "Contact us", "fr": "Contactez-nous"},
 		{"page": "www/location", "en": "Find us", "fr": "Nous trouver"}
