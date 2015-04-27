@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 	var wwwDir = "../www/";
 	var parentGuideDir = "../doc/parentGuide";
+	var volunteerGuideDir = "../doc/volunteerGuide";
 
 	var p = require("path"); // Load the path manipulation module
 	var fs = require("fs"); // Load the filesystem module
@@ -23,6 +24,19 @@ module.exports = function(grunt) {
 		"pdf": {
 			"en": p.join(parentGuideDir, 'pdf', 'parent_guide_' + sharedVariables.startYear + '.en.pdf'),
 			"fr": p.join(parentGuideDir, 'pdf', 'parent_guide_' + sharedVariables.startYear + '.fr.pdf')
+		}
+	};
+
+	var volunteerGuideLocation = {
+		// Where the Markdown files go
+		"md": {
+			"en": p.join(volunteerGuideDir, 'markdown', 'volunteer_guide.en.md'),
+			"fr": p.join(volunteerGuideDir, 'markdown', 'volunteer_guide.fr.md')
+		},
+		// Where the PDF files go
+		"pdf": {
+			"en": p.join(volunteerGuideDir, 'pdf', 'volunteer_guide.en.pdf'),
+			"fr": p.join(volunteerGuideDir, 'pdf', 'volunteer_guide.fr.pdf')
 		}
 	};
 
@@ -60,6 +74,7 @@ module.exports = function(grunt) {
 	// Read the navigation structure
 	var navJSON = grunt.file.readJSON('config/www.json');
 	var pgJSON = grunt.file.readJSON('config/parent_guide.json');
+	var vgJSON = grunt.file.readJSON('config/volunteer_guide.json');
 
 	function getFileId(file) {
 		var match = file.match(/([^\/.]+)(\.html)?$/);
@@ -289,6 +304,10 @@ module.exports = function(grunt) {
 			parentGuide: {
 				options: { force: true },
 				src: [parentGuideLocation.md.en, parentGuideLocation.md.fr, parentGuideLocation.pdf.en, parentGuideLocation.pdf.fr]
+			},
+			volunteerGuide: {
+				options: { force: true },
+				src: [volunteerGuideLocation.md.en, volunteerGuideLocation.md.fr, volunteerGuideLocation.pdf.en, volunteerGuideLocation.pdf.fr]
 			}
 		},
 		md2html: {
@@ -341,6 +360,7 @@ module.exports = function(grunt) {
 			media: {
 				files: [
 					{expand: true, flatten: true, src: [parentGuideLocation.pdf.en, parentGuideLocation.pdf.fr], dest: 'media'},
+					{expand: true, flatten: true, src: [volunteerGuideLocation.pdf.en, volunteerGuideLocation.pdf.fr], dest: 'media'},
 					{expand: true, src: ['media/**'], dest: wwwDir},
 				]
 			},
@@ -350,10 +370,6 @@ module.exports = function(grunt) {
 			stylesheets: {
 				files: [{expand: true, src: ['css/**'], dest: wwwDir}]
 			}
-		},
-		spawnPandoc: {
-			en: {},
-			fr: {}
 		},
 		watch: {
 			build: {
@@ -389,27 +405,34 @@ module.exports = function(grunt) {
 			grunt.verbose.writeln('Processed "' + file.dest + '".');
 		});
 	});
-	grunt.registerTask('postProcDocMarkdown', 'Substitute variables in our Markdown and generate a docx/PDF', function() {
+	function postProcDocMarkdown(outputLocation) {
 		var content;
 		var infoBoxMarkup = function(a,s) { return '\\vspace{8pt} \\setlength{\\fboxsep}{6pt} \\framebox {\\parbox {\\linewidth} {\\textbf{NOTE: }' +
 			texEscape(s).replace(/\r?\n\r?\n/gm, "\\\\\\\\") + // replace double newlines with 4 backslashes, which we define here using 8 backslashes
 			'}} \\vspace{8pt}'; };
 		var sectionMarkup = {begin: '\\noindent\\begin{minipage}{\\linewidth}', end: '\\end{minipage}'};
 		content = replaceVariables(
-			parentGuideLocation.md.en,
+			outputLocation.md.en,
 			'en',
 			{ignoreAssets: true, ignoreMedia: true, infoBoxMarkup: infoBoxMarkup, sectionMarkup: sectionMarkup}
 		);
 		content = tweakMarkdownforPandoc(content);
-		grunt.file.write(parentGuideLocation.md.en, content);
+		grunt.file.write(outputLocation.md.en, content);
 		content = replaceVariables(
-			parentGuideLocation.md.fr,
+			outputLocation.md.fr,
 			'fr',
 			{ignoreAssets: true, ignoreMedia: true, infoBoxMarkup: infoBoxMarkup, sectionMarkup: sectionMarkup}
 		);
 		content = tweakMarkdownforPandoc(content);
-		grunt.file.write(parentGuideLocation.md.fr, content);
+		grunt.file.write(outputLocation.md.fr, content);
+	}
+	grunt.registerTask('postProcParentGuideMarkdown', 'Substitute variables in our Markdown and generate a PDF', function() {
+		postProcDocMarkdown(parentGuideLocation);
 	});
+	grunt.registerTask('postProcVolunteerGuideMarkdown', 'Substitute variables in our Markdown and generate a PDF', function() {
+		postProcDocMarkdown(volunteerGuideLocation);
+	});
+
 	grunt.registerTask('getVariables', function() {
 		// Read the media information
 		media = grunt.file.readJSON('media/media.json');
@@ -497,9 +520,9 @@ module.exports = function(grunt) {
 		return content;
 	}
 
-	grunt.registerTask('concatParentGuide', function() {
-		var pages = flattenPages(pgJSON.pages);
-		[{dest: parentGuideLocation.md.en, language: 'en'}, {dest: parentGuideLocation.md.fr, language: 'fr'}].forEach(function(o) {
+	function concatMarkdown(pageJSON, outputLocation) {
+		var pages = flattenPages(pageJSON.pages);
+		[{dest: outputLocation.md.en, language: 'en'}, {dest: outputLocation.md.fr, language: 'fr'}].forEach(function(o) {
 			var language = o.language, dest = o.dest;
 			var content = '', fileContent = '';
 			pages.forEach(function(page) {
@@ -516,6 +539,14 @@ module.exports = function(grunt) {
 			});
 			grunt.file.write(dest, content);
 		});
+	}
+
+	grunt.registerTask('concatParentGuide', function() {
+		concatMarkdown(pgJSON, parentGuideLocation);
+	});
+
+	grunt.registerTask('concatVolunteerGuide', function() {
+		concatMarkdown(vgJSON, volunteerGuideLocation);
 	});
 
 	grunt.registerTask('concatWww', function() {
@@ -541,21 +572,21 @@ module.exports = function(grunt) {
 
 	var childProcess = require('child_process');
 
-	grunt.registerMultiTask('spawnPandoc', function() {
-		var target = this.target;
-		if (target) {
+	function spawnPandoc(done, language, outputLocation, options) {
+		if (language) {
 			var pandocMd2Pdf, pandocTex2Pdf, fileContent;
 
 			// Create a dummy file; this makes sure the directory is created before pandoc tries to interact with it
-			grunt.file.write(parentGuideLocation.pdf[target], '');
+			grunt.file.write(outputLocation.pdf[language], '');
 
 			// --smart converts straight quotes/apostrophes to curly ones
 			// --latex-engine=xelatex gets accented characters working as expected
-			var cmd = 'pandoc -s -o {dest} {src} --template pandoc.template --toc --smart --latex-engine=xelatex -V geometry:"top=1in, bottom=1in, width=5in"';
+			var cmd = 'pandoc -s -o {dest} {src} --template pandoc.template --smart --latex-engine=xelatex -V geometry:"top=1in, bottom=1in, width=5in"';
+			if (options && options.toc) {
+				cmd += " --toc"
+			}
 
-			var done = this.async();
-
-			pandocMd2Pdf = childProcess.exec(cmd.replace(/\{src\}/g, parentGuideLocation.md[target]).replace(/\{dest\}/g, parentGuideLocation.pdf[target]),
+			pandocMd2Pdf = childProcess.exec(cmd.replace(/\{src\}/g, outputLocation.md[language]).replace(/\{dest\}/g, outputLocation.pdf[language]),
 				function (error, stdout, stderr) {
 				if (error) {
 					console.log(error.stack);
@@ -572,9 +603,24 @@ module.exports = function(grunt) {
 		} else {
 			grunt.fail.fatal("Couldn't determine language for pandoc task.");
 		}
+	}
+	grunt.registerTask('spawnParentGuidePandoc', function() {
+		options = {toc: true};
+		var done = this.async();
+		var codes = {};
+		spawnPandoc(function(code) {codes.en = code; if (codes.fr !== undefined) {done(codes.en && codes.fr);}}, 'en', parentGuideLocation, options);
+		spawnPandoc(function(code) {codes.fr = code; if (codes.en !== undefined) {done(codes.en && codes.fr);}}, 'fr', parentGuideLocation, options);
+	});
+	grunt.registerTask('spawnVolunteerGuidePandoc', function() {
+		var done = this.async();
+		var codes = {};
+		spawnPandoc(function(code) {codes.en = code; if (codes.fr !== undefined) {done(codes.en && codes.fr);}}, 'en', volunteerGuideLocation);
+		spawnPandoc(function(code) {codes.fr = code; if (codes.fr !== undefined) {done(codes.en && codes.fr);}}, 'fr', volunteerGuideLocation);
 	});
 	
-	grunt.registerTask('buildDocs', ['concatParentGuide', 'postProcDocMarkdown', 'spawnPandoc:en', 'spawnPandoc:fr']);
+	grunt.registerTask('buildDocs', ['concatParentGuide', 'concatVolunteerGuide',
+		'postProcParentGuideMarkdown', 'postProcVolunteerGuideMarkdown',
+		'spawnParentGuidePandoc', 'spawnVolunteerGuidePandoc']);
 
 	grunt.registerTask('buildWebsite', ['copy','getVariables','concatWww','md2html','postProcHtml']);
 
