@@ -36,7 +36,6 @@
 			{"page": "event_attendance"}
 		]},
 		{"page": "parentGuide/conclusion"},
-		{"page": "parentGuide/volunteer_roles", "pages": [{"page": "volunteer_details"}]},
 		{"page": "parentGuide/board_roles", "pages": [{"page": "board_details"}]}
 	]
 }

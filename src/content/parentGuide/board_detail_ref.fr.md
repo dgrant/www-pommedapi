@@ -1,1 +1,1 @@
-Pour plus de détails au sujet des ces postes, consulter l’__Annexe B : Postes au Conseil d’Administration__ à la fin de ce guide.
+Pour plus de détails au sujet des ces postes, consulter l’__Annexe A : Postes au Conseil d’Administration__ à la fin de ce guide.

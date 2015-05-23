@@ -23,9 +23,3 @@ June 30. Otherwise it will be cashed._
 be covered by the tuition deposit)
 
 Your child cannot start the program until these cheques are received by the Registrar.
-
-<!-- infoBox -->
-For the 2014-2015 school year only, the {% noParticipationPenalty %} deposit cheque for parent
-participation is due on the first day of classes, as it is new this year and was introduced too late
-to be included in the registration package.
-<!-- /infoBox -->

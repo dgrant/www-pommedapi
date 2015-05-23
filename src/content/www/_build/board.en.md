@@ -59,8 +59,9 @@ These are Pomme d’Api’s executive Board positions for {% schoolYear %}:
 * Director of Fundraising
 * Registrar
 * Director of Publicity
-* Partying Director
+* Maintenance Director
 * Francophone Liaison
+* Technology Director
 
 # President
 
@@ -182,18 +183,16 @@ __Duties:__
 through advertising
 * oversee the annual Open House
 
-# Partying Director
+# Maintenance Director
 
 __Special requirements:__ None
 
 __Duties:__
 
-* work with the Party committee to plan and orchestrate the class
-Halloween parties, the school Christmas concert and party, and
-the year-end graduation party
-* plan and coordinate a summer celebration to promote the school
-to the community
-* support field trip volunteers
+* coordinate and delegate indoor and outdoor maintenance tasks and projects, including:
+	* repairing school equipment and furnishings as necessary
+	* planning and executing other building and maintenance projects
+	* coordinating sidewalk and playground maintenance
 
 # Francophone Liaison
 
@@ -208,3 +207,20 @@ __Duties:__
 * communicate with external francophone community resources
 and parents
 * assist with French translation when needed
+
+# Technology Director
+
+__Special requirements:__
+
+* must have computer skills
+* must be able to work from home and occasionally on-site
+
+__Duties:__
+
+* coordinate and delegate all technology-related volunteer activity at the preschool, including:
+	* maintaining and updating the website (back end and front end)
+	* assisting photographers with sharing digital photos with their classes
+	* managing the school's various email lists
+	* providing technical support to the teachers
+	* upgrading, fixing, or purchasing items such as computers, printers, networking devices and phone systems
+	* providing technical assistance and advice to other parents for preschool-related activities

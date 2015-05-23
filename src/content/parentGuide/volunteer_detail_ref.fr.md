@@ -1,1 +1,2 @@
-Pour plus de détails à propose de ces postes, consultez l'__Annexe A: Principaux Postes de bénévolat pour les parents bénévoles__, à la fin de ce guide.
+Pour plus de détails à propose de ces postes, consultez 
+le Guide des parents bénévoles.

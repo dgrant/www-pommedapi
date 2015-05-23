@@ -1,2 +1,1 @@
-For more details about these positions, please see __Appendix A: Current Parent Volunteer Roles__
-at the end of this guide.
+For more details about these positions, please see the Volunteer Guide on the Pomme d'Api website.

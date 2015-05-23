@@ -1,11 +1,11 @@
-﻿# Accident and Emergency Procedures
+# Accident and Emergency Procedures
 
 This section talks about our procedures for accidents or other emergencies which may occur
 while your child is at the preschool.
 
 ## Accident Procedures
 
-On the first day of school you will be asked to fill out two Emergency Consent cards which
+On the first day of school you will be asked to fill out three Emergency Consent cards which
 include emergency contact information for your child. Please ensure that you leave a number
 where you or another designated caregiver can be reached quickly.
 
@@ -71,19 +71,24 @@ preschool (a grey fire door facing the empty lot behind the church) with the loc
 contact information for each child. If possible, parents will also be phoned, texted, or emailed
 with the information.
 
-### Emergency Kit
+### Emergency Kit and Emergency Comfort Kits
 
-The preschool has an emergency kit with the following contents:
+The preschool has an emergency kit with supplies for two teachers and 20 children for a three day period.
 
-* food and water for the teachers and a full class for at least 3 days
-* a charged cell phone
-* emergency blankets
-* permanent markers
-* paper
-* plastic bags
-* a radio
-* a flashlight
-* emergency contact information for all students
+The preschool also stores a "personal comfort kit" for each child. At the beginning of the school year, you will be asked to bring in a large ziplock bag labelled with your child's name and filled with items that you feel would comfort your child in case they have to wait to be reunited with you in an emergency. For example, your kit could include:
 
-If the class is evacuated, the teachers will also bring along the class first aid kit, as well as the
-attendance form from that day.
+* a short "letter of comfort" from you
+* pictures (of your family, a pet, your child's room, etc.)
+* a notepad or drawing paper
+* small markers or pencil crayons
+* a small stuffy, toy, playing cards, or a game
+* a flashlight with batteries (flashlights are also included in the school's emergency kit)
+
+The kit will also contain a copy of the emergency contact card you will be asked to fill out at the beginning of the school year.
+
+The kits should not contain:
+
+* food
+* medication
+* crayons (which can melt in the storage bin)
+* items which would not fit in the ziplock bag

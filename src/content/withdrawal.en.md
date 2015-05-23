@@ -6,7 +6,7 @@ refunded.
 
 If you choose to withdraw your child after the probationary period is over, you must notify the
 Registrar in writing one month prior to withdrawal. If you give written notice at least one
-month in advance, your tuition deposit for the month of June will be refunded. Otherwise, it
+month in advance, your tuition deposit for the month of June will be applied to your final month. Otherwise, it
 will be forfeited.
 
 <!--infoBox-->

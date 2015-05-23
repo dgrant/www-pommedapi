@@ -1,15 +1,9 @@
-﻿# Drop-offs and Pick-ups
+# Drop-offs and Pick-ups
 
 Pomme d’Api has a number of policies and procedures regarding drop-offs and pick-ups,
 including our request that parents allow extra time for the two day immersion class drop-off
 and pick-up, our gates-closed policy, our sign-in/sign-out procedure, our Safe Release
 procedure, and our policy about late pick-ups.
-
-## Extra time for two day immersion drop-off and pick-up
-
-If your child is in the two day immersion class, please arrive at least ten minutes before the
-start of class to help your child in the cloakroom. Similarly, please arrive ten minutes before the
-end of class to help your child get ready to go outside.
 
 ## Gates-closed policy
 
@@ -112,8 +106,8 @@ contacts.
 At the discretion of the teachers:
 
 * The first time this situation occurs there will be no penalty.
-* If this situation occurs a second time within a month, a written warning will be issued.
-* If this situation occurs a third time within a month, the parent will be required to meet
+* If this situation occurs a second time, a written warning will be issued.
+* If this situation occurs a third time, the parent will be required to meet
 with two members of the Board to discuss the issue, and will incur a {% latePickupPenalty %} penalty.
 
 If no resolution can be reached, the parent will be asked to withdraw their child from the

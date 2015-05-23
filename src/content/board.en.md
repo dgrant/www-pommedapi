@@ -59,5 +59,6 @@ These are Pomme d’Api’s executive Board positions for {% schoolYear %}:
 * Director of Fundraising
 * Registrar
 * Director of Publicity
-* Partying Director
+* Maintenance Director
 * Francophone Liaison
+* Technology Director
