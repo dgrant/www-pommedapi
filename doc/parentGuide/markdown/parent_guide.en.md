@@ -940,7 +940,7 @@ you must make arrangements to have somebody else pick up your child.
 
 \vspace{8pt} \setlength{\fboxsep}{6pt} \framebox {\parbox {\linewidth} {\textbf{NOTE: }
 The teachers are authorized to release your child only to those people you have
-designated on your registration form.
+designated in writing (this can include email: see the Authorized pick-up section for more details).
 }} \vspace{8pt}
 
 If you know that there will be a change in pick-up routine, please tell the teachers ahead of
@@ -956,8 +956,7 @@ At the discretion of the teachers:
 
 * The first time this situation occurs there will be no penalty.
 * If this situation occurs a second time, a written warning will be issued.
-* If this situation occurs a third time, the parent will be required to meet
-with two members of the Board to discuss the issue, and will incur a $50 penalty.
+* If this situation occurs a third time, the parent will be charged $1 per minute late (the clock starts about 10 minutes after the end of class, when the teachers go back inside with any children who have not yet been picked up).
 
 If no resolution can be reached, the parent will be asked to withdraw their child from the
 preschool. This penalty may seem harsh, but late pick-ups infringe upon the teacher’s time,
