@@ -1,6 +1,12 @@
 {
   "name": "pommedapi-website",
   "version": "1.0.0",
+  "description": "pomme dapi website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgrant/www-pommedapi"
+  },
+  "private": "true",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-md2html": "~0.2.1",
