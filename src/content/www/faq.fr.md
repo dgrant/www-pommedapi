@@ -43,7 +43,7 @@ L'école ne ferme généralement pas pour des journées pédagogiques comme le f
 __Q. Quand sont les vacances de Noël et la semaine de relâche et combien de temps durent ces congés?__
 
 Pomme d'Api suit le calendrier des jours fériés du Conseil scolaire de Vancouver (Vancouver School Board). Cependant, 
-pour les trois dernières années, le VSB a mis en place un projet pilote avec un calendrier différé leur donnant deux semaines de relâche. Pendant 2013 et 2014, Pomme d'Api a pris la première des deux semaines, et prendra la seconde en 2015. Les vacances de Noël concordent avec celles du VSB.
+pour les dernières quelques années, le VSB a mis en place un projet pilote avec un calendrier différé leur donnant deux semaines de relâche. Pomme d'Api prendra la seconde en 2016. Les vacances de Noël concordent avec celles du VSB.
 
 __Q. Que se passe-t-il lors des jours fériés?__
 

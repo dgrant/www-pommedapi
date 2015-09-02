@@ -69,7 +69,7 @@ example, Christmas Concert volunteers, or the Open House committee).
 ### Non-Participation policy
 
 When you register your child at Pomme d’Api, you must include a deposit cheque of {% noParticipationPenalty %},
-dated for July 1 of the following year. This cheque will be destroyed if your family contributes at
+dated for June 1 of the following year. This cheque will be destroyed if your family contributes at
 least {% minimumParticipationHours %} volunteer hours by June 30. If you do not meet this minimum requirement by June 30,
 the cheque will be cashed.
 

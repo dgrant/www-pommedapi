@@ -34,7 +34,7 @@ Chaque mois, vous devez soumettre le total de vos heures de bénévolat à votre
 
 ### Politique de non-participation
 
-Lorsque vous inscrivez votre enfant à Pomme d'Api, vous devez inclure un chèque de {% noParticipationPenalty %} postdaté au premier juillet de la prochaine année. Ce chèque sera détruit si votre famille a contribué au moins {% minimumParticipationHours %} heures au 30 juin. Si vous n’avez pas contribué {% minimumParticipationHours %} heures au 30 juin, votre chèque sera déposé. 
+Lorsque vous inscrivez votre enfant à Pomme d'Api, vous devez inclure un chèque de {% noParticipationPenalty %} postdaté au premier juin de la prochaine année. Ce chèque sera détruit si votre famille a contribué au moins {% minimumParticipationHours %} heures au 30 juin. Si vous n’avez pas contribué {% minimumParticipationHours %} heures au 30 juin, votre chèque sera déposé. 
 	 	 	
 Les familles qui ont contribué moins de 15 heures de bénévolat au 31 décembre vont recevoir un courriel durant la première semaine de l'année d'école en Janvier. Cette note contiendra les points suivants:
 

@@ -42,7 +42,7 @@ The school generally does not close for Professional Days like elementary school
 
 __Q. How long and when are the Christmas breaks and Spring breaks?__
 
-Pomme d'Api has followed the Vancouver School Board's holiday schedule; however, for the past three years the VSB has been piloting an alternate schedule, which has given them a 2 week spring break. Pomme d'Api has taken the first of the two in 2013 and 2014, and will take the second in 2015. The Christmas break has continued to align exactly with the VSBs.
+Pomme d'Api has followed the Vancouver School Board's holiday schedule; however, for the past few years the VSB has been piloting an alternate schedule, which has given them a 2 week spring break. Pomme d'Api will take the second in 2016. The Christmas break has continued to align exactly with the VSBs.
 
 __Q. How are statutory holidays handled?__
 
