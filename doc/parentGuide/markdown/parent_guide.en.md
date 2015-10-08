@@ -750,7 +750,7 @@ This section contains general information about the operations and policies of t
 ## Absences
 
 If your child will be absent from preschool, please send a text to our __text-only absentee line__ at
-(604) 877-1122 with a message in the following format:
+(778) 939-3095 with a message in the following format:
 
 > Child’s name  
 > Class  

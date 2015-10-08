@@ -522,7 +522,7 @@ Cette section regroupe les renseignements généraux sur le fonctionnement et le
 
 ## Absences
 
-Si votre enfant doit s’absenter de l’école, s.v.p. , envoyer un texto à notre ligne/texto absence au numéro (604) 877-1122 avec un message formaté comme suit:
+Si votre enfant doit s’absenter de l’école, s.v.p. , envoyer un texto à notre ligne/texto absence au numéro (778) 939-3095 avec un message formaté comme suit:
 
 > Nom de l’enfant  
 > Classe  
