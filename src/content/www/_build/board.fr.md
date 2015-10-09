@@ -131,6 +131,7 @@ __Tâches:__
 
 * maintenir une base de données informatique des élèves inscrits et des futurs élèves
 * informer les professeurs, les représentants de classes, le Secrétaire, le Directeur de la Participation des Parents, et le webmaître de l’arrivée de nouveaux élèves et des abandons 
+* informer la comité de la technologie des nouveaux étudiants et abandons afin qu'ils puissent mettre à jour les listes de diffusion.
 * répondre aux demandes de renseignements généraux concernant le registrariat pour des gens intéressés à s’inscrire éventuellement à la prématernelle et également pour les familles dont les enfants fréquentent présentement l’école
 * maintenir une liste des familles d’anciens élèves intéressées à inscrire à l’avance un autre membre de la famille plus jeune
 * ramasser les paiements des frais scolaires et d’inscription

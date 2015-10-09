@@ -100,6 +100,8 @@ __Duties:__
 * maintain a database of current students and future students
 * inform teachers, class reps, Secretary, Parent Participation
 Director, and webmaster of new and departing students
+* inform technology committee of new and departing students so
+they can update mailing lists.
 * respond to registration and enrollment inquiries from potential
 registrants and current families
 * maintain a list of alumni families interested in early registration

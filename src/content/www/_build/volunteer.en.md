@@ -534,11 +534,15 @@ __Duties:__
 * maintain and update the website (back end and front end)
 * assist photographers with sharing digital photos with their classes
 * manage the school’s various automated email lists
+ * create lists for new year ASAP. Make sure it is ready for beginning of September.
+ * update lists throughout the year when informed of new students by registrar
 * provide technical support to the teachers
 * upgrade, fix, or purchase items such as computers, printers,
 networking devices and phone systems
 * provide technical assistance and advice to other parents for
 preschool-related activities
+* make sure local land line (MagicJack) and cell phone (7-eleven Speak-Out)
+are ready to go (and make sure they won't expire) before school year starts.
 
 # Translator
 

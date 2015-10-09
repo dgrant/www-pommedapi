@@ -427,9 +427,13 @@ __Tâches:__
 * maintenir et mettre à jour le site web (début et fin)
 * aider les photographes à publier et partager leurs photos numériques avec leurs classes
 * gérer toutes les listes informatiques (automatiques) de l’école
+ * créer des listes pour la nouvelle année aussitôt que possible. Assurer qu'elle est prêt pour le début de Septembre.
+ * mettre à jour les listes tout au long de l'année lorsque nous avons été informé des nouveaux étudiants par le registraire
 * fournir du support informatique aux professeurs
 * effectuer les mises à niveaux, réparer ou acheter les items informatiques comme les ordinateurs, imprimantes, les périphériques web et les systèmes téléphoniques
 * fournir une assistance technique et conseiller les autres parents pour des activités préscolaires
+* assurez-vous que la ligne fixe (MagicJack) et le téléphone cellulaire (7-Eleven Speak-Out) 
+fonctionnent correctement (et assurez-vous qu'ils ne expireront pas) avant année scolaire commence.
 
 # Traducteur(trice)
 
