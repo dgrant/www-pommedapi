@@ -36,5 +36,11 @@ considered bilingual. Exceptions may be considered on a case-by-case basis.
 
 Students in the francophone program should be exposed regularly to French within the home.
 
-Students in the four-day francophone program must additionally be at least 4 years old by
-December 31 of the school year in which they are registered.
+As well, the francophone classes have the following age restrictions, based on the student's age on December 31 of the school year in which he or she is registered:
+
+* Students in the three-day francophone program must be 3 years old on December 31.
+
+* Students who are are turning 4 on or before December 31 must register in the four-day francophone program.
+ 
+* Students in the four-day francophone program must be at least 4 years old on
+December 31.

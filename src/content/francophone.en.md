@@ -4,9 +4,11 @@ The teachers speak only French in the classroom, and children are encouraged to 
 
 For a child to thrive in this context, it is imperative that French be part of his everyday life. It is the responsibility of the families who enroll their children in the Programme Francophone to also speak French to their child outside the classroom, and to expose the child to a francophone environment outside Pomme d’Api. If French support is not provided at home, then enrollment in the French Immersion program is suggested.
 
-__Programme Francophone 3-4 y. old (M/W/F 1:00 – 3:30pm)__
+__Programme Francophone 3-4 y. old (3 years old on Dec 31)__
+__(M/W/F 1:00 – 3:30pm)__
 
-__Programme Francophone 4-5 y. old (M/W/Th/F 1:00 – 3:30pm)__
+__Programme Francophone 4-5 y. old (4 years old on Dec 31)__
+__(M/W/Th/F 1:00 – 3:30pm)__
 
 The Programme Francophone was established in September of 1994. It is designed for French speaking children and for children of French speaking parent(s).This program includes the Modèle de Francisation distributed by the Association of Francophone Parents to only 10 preschools throughout the whole province. 
 
