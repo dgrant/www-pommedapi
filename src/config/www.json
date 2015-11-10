@@ -24,7 +24,7 @@
 			{"page": "www/_build/volunteer", "concat": ["volunteer", "volunteer_details"], "en": "Parent positions", "fr": "Postes des parents bénévoles"},
 			{"page": "www/_build/board", "concat": ["board", "board_details"], "en": "Board positions", "fr": "Postes administratifs"},
 			{"page": "www/documents", "en": "Parent guides", "fr": "Guides des parents"},
-			{"page": "calender", "en": "Calender", "fr": "Calendrier"}
+			{"page": "calender", "en": "Calendar", "fr": "Calendrier"}
 		]},
 		{"page": "www/contact", "en": "Contact us", "fr": "Contactez-nous"},
 		{"page": "www/location", "en": "Find us", "fr": "Nous trouver"}
