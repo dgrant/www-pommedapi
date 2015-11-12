@@ -12,8 +12,12 @@ Le programme d’immersion de trois jours s’adresse aux enfants qui ont d’ab
 
 ## Le programme francophone de trois jours
 
-Le programme francophone de trois jours s’adresse aux les enfants qui ont entre 3-5 ans provenant de familles francophones. Le programme est entièrement en français.
+Le programme francophone de trois jours s'adresse aux enfants de 3 et 4 ans, de familles francophones. Le programme est entièrement en français.
+
+Les enfants devraient avoir 3 ans au 31 décembre de l'année dans laquelle ils commencent le programme. S'ils ont 4 ans au 31 décembre, ils doivent s'inscrire au programme francophone de 4 jours.
 
 ## Le programme francophone de quatre jours
 
-Le programme francophone de quatre jours d’adresse aux enfants qui ont entre 4-5 ans, provenant de familles francophones. Ce programme est dispensé en même temps que le programme francophone de trois jours, mais avec une classe additionnelle par semaine. Cette classe additionnelle permet aux professeurs de faire des activités plus appropriées pour les enfants plus âgés.
+Le programme francophone de 4 jours s'adresse aux enfants de 4 et 5 ans, de familles francophones. Les enfants devraient avoir au moins 4 ans au 31 décembre de l'année dans laquelle ils commencent le programme.
+
+Ce programme est dispensé en même temps que le programme francophone de trois jours, mais avec une classe additionnelle par semaine. La journée additionnelle permet aux éducatrices d'introduire des activités mieux adaptées aux enfants plus vieux, par exemple, une préparation à la maternelle.

@@ -24,4 +24,10 @@ Les enfants qui ne satisfont pas à au moins un de ces critères ne sont pas adm
 
 Les élèves dans le programme francophone doivent parler français régulièrement à la maison.
 
-Les élèves dans le programme d’immersion de quatre jours doivent avoir au moins 4 ans au 31 décembre de l'année scolaire où ils commencent le programme.
+De plus, les classes francophones comportent les restrictions suivantes, liées à l'âge de l'enfant au 31 décembre de l'année à laquelle il ou elle commence le programme:
+
+* Les élèves dans le programme francophone de trois jours doivent avoir 3 ans au 31 décembre.
+
+* Les élèves qui auront 4 ans avant ou au 31 décembre, doivent s'inscrire dans le programme francophone de 4 jours.
+
+* Les élèves dans le programme francophone de 4 jours doivent avoir au moins 4 ans avant ou au 31 décembre.

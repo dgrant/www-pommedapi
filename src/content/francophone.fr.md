@@ -4,9 +4,11 @@ Les éducatrices ne parlent que français en classe et les enfants sont encourag
 
 Pour que l’enfant réussisse dans ce contexte, il est impératif que le français fasse partie de son quotidien. Il est de la responsabilité des familles qui inscrivent leur enfant au programme francophone de parler en français à leur enfant à l’extérieur de la classe et d’exposer l’enfant à un environnement francophone en dehors de Pomme d’Api. Si le support francophone n’est pas fourni à la maison, l’inscription au programme d’immersion en français est alors suggérée.
 
-__Programme francophone 3-4 ans (Lun/Mer/Ven 13h00 – 15h30)__
+__Programme francophone 3-4 ans (3 ans au 31 déc.)__
+__(Lun/Mer/Ven 13h à 15h30)__
 
-__Programme francophone 4-5 ans (Lun/Mer/Jeu/Ven 13h00 – 15h30)__
+__Programme francophone 4-5 ans (4 ans au 31 déc.)__
+__(Lun/Mer/Jeu/Ven 13h à 15h30)__
 
 Le programme francophone a été fondé en septembre 1994. Il est conçu pour les enfants francophones et pour les enfants de parent(s) francophone(s). Ce programme inclus le Modèle de Francisation distribué par l’Association des parents francophones à seulement 10 pré-maternelles à travers toute la province.
 
