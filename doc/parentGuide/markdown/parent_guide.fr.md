@@ -105,11 +105,15 @@ Le programme d’immersion de trois jours s’adresse aux enfants qui ont d’ab
 
 ### Le programme francophone de trois jours
 
-Le programme francophone de trois jours s’adresse aux les enfants qui ont entre 3-5 ans provenant de familles francophones. Le programme est entièrement en français.
+Le programme francophone de trois jours s'adresse aux enfants de 3 et 4 ans, de familles francophones. Le programme est entièrement en français.
+
+Les enfants devraient avoir 3 ans au 31 décembre de l'année dans laquelle ils commencent le programme. S'ils ont 4 ans au 31 décembre, ils doivent s'inscrire au programme francophone de 4 jours.
 
 ### Le programme francophone de quatre jours
 
-Le programme francophone de quatre jours d’adresse aux enfants qui ont entre 4-5 ans, provenant de familles francophones. Ce programme est dispensé en même temps que le programme francophone de trois jours, mais avec une classe additionnelle par semaine. Cette classe additionnelle permet aux professeurs de faire des activités plus appropriées pour les enfants plus âgés.
+Le programme francophone de 4 jours s'adresse aux enfants de 4 et 5 ans, de familles francophones. Les enfants devraient avoir au moins 4 ans au 31 décembre de l'année dans laquelle ils commencent le programme.
+
+Ce programme est dispensé en même temps que le programme francophone de trois jours, mais avec une classe additionnelle par semaine. La journée additionnelle permet aux éducatrices d'introduire des activités mieux adaptées aux enfants plus vieux, par exemple, une préparation à la maternelle.
 
 ## Conditions d’admission
 
@@ -137,7 +141,13 @@ Les enfants qui ne satisfont pas à au moins un de ces critères ne sont pas adm
 
 Les élèves dans le programme francophone doivent parler français régulièrement à la maison.
 
-Les élèves dans le programme d’immersion de quatre jours doivent avoir au moins 4 ans au 31 décembre de l'année scolaire où ils commencent le programme.
+De plus, les classes francophones comportent les restrictions suivantes, liées à l'âge de l'enfant au 31 décembre de l'année à laquelle il ou elle commence le programme:
+
+* Les élèves dans le programme francophone de trois jours doivent avoir 3 ans au 31 décembre.
+
+* Les élèves qui auront 4 ans avant ou au 31 décembre, doivent s'inscrire dans le programme francophone de 4 jours.
+
+* Les élèves dans le programme francophone de 4 jours doivent avoir au moins 4 ans avant ou au 31 décembre.
 
 ## Inscription
 

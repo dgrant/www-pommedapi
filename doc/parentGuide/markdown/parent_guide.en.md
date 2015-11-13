@@ -144,15 +144,18 @@ year.
 
 ### Three-day francophone program
 
-The three-day francophone program is aimed at children aged 3-5 from francophone families.
+The three-day francophone program is aimed at children aged 3-4 from francophone families. 
 This program is conducted exclusively in French.
+
+Children should be 3 years old on December 31 of the school year in which they are registered. If they are 4 years old by December 31, they must register in the four-day francophone program.
 
 ### Four-day francophone program
 
-The four-day francophone program is aimed at children aged 4-5 from francophone families.
+The four-day francophone program is aimed at children aged 4-5 from francophone families. Children should be at least 4 years old on December 31 of the school year in which they are registered.
+
 This program overlaps with the three-day francophone program, but has one extra class each
-week. The additional day allows the teachers to pursue more age-appropriate activities with
-the older children that are unsuitable for the younger students.
+week. The additional day allows the teachers to pursue more age-appropriate activities, such as kindergarten readiness, with
+the older children.
 
 ## Entrance eligibility
 
@@ -192,8 +195,14 @@ considered bilingual. Exceptions may be considered on a case-by-case basis.
 
 Students in the francophone program should be exposed regularly to French within the home.
 
-Students in the four-day francophone program must additionally be at least 4 years old by
-December 31 of the school year in which they are registered.
+As well, the francophone classes have the following age restrictions, based on the student's age on December 31 of the school year in which he or she is registered:
+
+* Students in the three-day francophone program must be 3 years old on December 31.
+
+* Students who are are turning 4 on or before December 31 must register in the four-day francophone program.
+ 
+* Students in the four-day francophone program must be at least 4 years old on
+December 31.
 
 ## Registration
 
