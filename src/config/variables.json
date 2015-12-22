@@ -1,5 +1,8 @@
 {
-	"startYear": 2015,
+	"startYear": "2015",
+    "endYear": "2016",
+    "schoolYear": "2015-2016",
+    "nextSchoolYear": "2016-2017",
 	"telephoneNumber": "(604) 800-1197",
 	"absenteeTextNumber": "(778) 939-3095",
 	"registrarEmailLink": "<a href=\"mailto:registrar.pommedapi@gmail.com\">registrar.pommedapi@gmail.com</a>",
@@ -13,5 +16,7 @@
 	"threeDayImmersionMonthlyFee": "$225",
 	"threeDayFrancophoneMonthlyFee": "$225",
 	"fourDayFrancophoneMonthlyFee": "$290",
-	"copyright": "&copy; Pomme d'Api 2015"
+	"copyright": "&copy; Pomme d'Api 2015",
+    "upcomingRegistration3sBornInYear": "2013",
+    "upcomingRegistration4sBornInYear": "2012"
 }

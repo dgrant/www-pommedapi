@@ -9,10 +9,6 @@ module.exports = function(grunt) {
 
 	// Read variables.json
 	var sharedVariables = grunt.file.readJSON('config/variables.json');
-	// Infer the end year and school year from the startYear definition
-	sharedVariables.endYear = sharedVariables.startYear + 1;
-	sharedVariables.schoolYear = sharedVariables.startYear + "-" + sharedVariables.endYear;
-	sharedVariables.nextSchoolYear = sharedVariables.endYear + "-" + (sharedVariables.endYear + 1);
 	
 	var parentGuideLocation = {
 		// Where the Markdown files go
