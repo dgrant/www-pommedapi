@@ -1,15 +1,15 @@
 {
 	"registration_form_en": {
-		"path": "2015_Registration_Form.pdf",
+		"path": "2016_Registration_Form.pdf",
 		"icon": "pdf",
-		"en": "2015 English Registration Form",
-		"fr": "Demande d’inscription 2015 (anglais)"
+		"en": "2016 English Registration Form",
+		"fr": "Demande d’inscription 2016 (anglais)"
 	},
 	"registration_form_fr": {
-		"path": "2015_Demande_d'Inscription.pdf",
+		"path": "2016_Demande_d'Inscription.pdf",
 		"icon": "pdf",
-		"en": "2015 French Registration Form",
-		"fr": "Demande d’inscription 2015 (français)"
+		"en": "2016 French Registration Form",
+		"fr": "Demande d’inscription 2016 (français)"
 	},
 	"parent_guide_en": {
 		"path": "added_by_build",
