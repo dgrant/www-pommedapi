@@ -10,5 +10,12 @@
 		"type": "png",
 		"en": "smiling girl",
 		"fr": "jeune fille souriante"
+	},
+	"summer_program": {
+		"path": "summer_program.jpg",
+		"type": "jpeg",
+		"en": "summer program",
+		"fr": "programme d'ete"
 	}
+
 }
