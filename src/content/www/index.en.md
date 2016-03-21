@@ -1,5 +1,7 @@
 # Pomme d'Api Preschool
 
+## Summer program!
+
 {% @asset:summer_program %}
 
 ## About Pomme d'Api
