@@ -26,6 +26,23 @@ Lorsque vous revenez chercher votre enfant, vous devez signer une nouvelle fois,
 C’est très important que vous apposiez votre signature et le nom de votre enfant sur la feuille des présences à l’entrée et au départ, chaque jour, car cela permet aux professeurs de connaitre exactement quels enfants sont sous leur surveillance en tout temps. Cela peut être vital en cas d’urgence.
 <!--/infoBox-->
 
+## Les arrives tardives
+
+Vingt minutes après le debut de la classe, une pancarte indiquant “la classe est en cours” va etre affichée à la porte. Les élèves qui arrivent après que la pancarte soit affichée ne pourront pas être admise en classe ce jour. Il n y a pas de remboursement de frais pour les classes manquées à cause des arrivées tardives. 
+
+Lors d’un circonstance inhabituel, comme le trés mauvais temps, la décision de placer la pancarte sera à la discretion des professeurs.
+
+Des exceptions seront possibles pour les individus en cas d'urgences.
+
+La nouvelle règle va peut être paraître un peu sévère, mais lorsqu’ un enfant est très en retard, ca dérange toute la classe pour plusieurs raisons:
+
+* L’enfant a moins de temps pour les jeux libres et veux continuer à jouer lorsque c est le temps de ramasser, alors la transition est plus difficile pour eux.
+* Les enseignantes doivent continuellement interrompre ce qu elles font pour répondre à la porte, laissant seulement une enseignante pour superviser et interragir avec les élèves.
+* Il y a un risque accru que la porte de la classe soit laissée ouverte/débarrée si un parent quitte sans en avertir les enseignantes.
+* Certains enfants qui ont plus de difficulté à s acclimater deviennent anxieux lorsque les enseignantes les quitte pour répondre à la porte:
+  * Ils sont anxieux que les enseignantes les quitte ( alors que leurs parents les ont déjà quittés)
+  * Ils développent un espoir irréel que cela pourrait être leurs parents qui ont sonné à la porte et reviennent les chercher.
+
 ## Procédure de sécurité pour la sortie des enfants
 
 Les professeurs suivent la politique de sortie sécuritaire lorsqu’ils permettent à l’enfant de quitter l’école lorsque les classes sont terminées. La procédure détaille spécifiquement qui peut venir chercher l’enfant, et quand les professeurs peuvent refuser de laisser partir l’enfant.

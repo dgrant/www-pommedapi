@@ -28,6 +28,23 @@ know which children are under their care at all times. This is particularly impo
 emergency situation.
 <!--/infoBox-->
 
+## Late drop-off policy
+
+A “class in session” sign will be placed on the outside door 20 minutes after the start of each class. Students who arrive after the sign has been placed on the door will not be admitted to class that day. There will be no tuition refund for classes missed due to lateness.
+
+The teachers may use their discretion on when to put out the sign on days when there is an unusual circumstance such as very bad weather.
+
+Exceptions may be made on a case-by-case basis in extreme circumstances.
+
+This policy may seem harsh, but when a child is very late, the entire class is disrupted for several reasons:
+
+* the child has less play time and still wants to play when it's clean up time, so the transition is harder on them
+* the teachers have to keep interrupting what they're doing to answer the door, leaving only one teacher to supervise and interact with the children
+* there is an increased risk that the classroom door will be left unlocked if a parent leaves without informing the teachers
+* some children who are unsettled get more anxious when the teachers leave them to answer the door:
+  * they get anxious about being left by the teachers (after their parents have already left them).
+  * they develop an unfulfilled hope that it might be their parents buzzing at the door and coming back for them.
+
 ## Safe Release procedure
 
 The teachers will follow Pomme d’Api’s Safe Release procedure when releasing your child after
