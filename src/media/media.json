@@ -24,7 +24,7 @@
 		"fr": "Guide des parents (français)"
 	},
 	"policy_manual_en": {
-		"path": "Pomme_dApi_Policy_Manual_March_2016.pdf",
+		"path": "Pomme_dApi_Policy_Manual_April_2016.pdf",
 		"icon": "pdf",
 		"en": "Policy Manual (English)",
 		"fr": "Guide des politiques (anglais)"
@@ -34,6 +34,12 @@
 		"icon": "pdf",
 		"en": "Volunteer Guide (English)",
 		"fr": "Guide des parents bénévoles (anglais)"
+	},
+	"volunteer_guide_fr": {
+		"path": "volunteer_guide.fr.pdf",
+		"icon": "pdf",
+		"en": "Volunteer Guide (English)",
+		"fr": "Guide des parents bénévoles (français)"
 	},
 	"constitution_en": {
 		"path": "PommeDApiConstitution.pdf",

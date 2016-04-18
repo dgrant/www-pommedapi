@@ -6,9 +6,7 @@ Students in the two-day program must be at least 32 months of age, in order to c
 child care licensing regulations. This also ensures that the school is able to provide age
 appropriate activities, toys, and furnishings.
 
-The two-day program is aimed at students 32-48 months of age. While there is no policy against
-admitting older children, we recommend that parents enroll older children into the three-day
-program to keep them with peers of their own age and developmental level.
+Students who are turning 4 years old on or before December 31 of the school year in which they are registered must register in the three-day immersion program, in order to keep them with peers of their own age and developmental level.
 
 ## Three-day immersion program
 

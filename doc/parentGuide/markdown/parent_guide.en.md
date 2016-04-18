@@ -135,6 +135,8 @@ The two-day immersion program is aimed at children entering their first year of 
 Most of the children will be 32-48 months of age, and activities and language are geared to that
 developmental level. French is introduced, but English is used as necessary.
 
+Children should be 3 years old on December 31 of the school year in which they are registered. If they are 4 years old by December 31, they must register in the three-day immersion program.
+
 ### Three-day immersion program
 
 The three-day immersion program is aimed at children progressing from the two-day
@@ -165,9 +167,7 @@ Students in the two-day program must be at least 32 months of age, in order to c
 child care licensing regulations. This also ensures that the school is able to provide age
 appropriate activities, toys, and furnishings.
 
-The two-day program is aimed at students 32-48 months of age. While there is no policy against
-admitting older children, we recommend that parents enroll older children into the three-day
-program to keep them with peers of their own age and developmental level.
+Students who are turning 4 years old on or before December 31 of the school year in which they are registered must register in the three-day immersion program, in order to keep them with peers of their own age and developmental level.
 
 ### Three-day immersion program
 
@@ -222,8 +222,7 @@ list. Those on the waiting list are not required to submit the registration fee 
 until a space has become available.
 
 Most students start at the preschool at the beginning of the school year in September, but
-students may enter the two-day immersion class until December 1, and the three-day
-immersion and both francophone classes until February 1, if space is available.
+students may register for the current school year up until April 1, if space is available.
 The Board may occasionally approve a registration beyond the deadline, determined on a case-by-case
 basis with the approval of the teachers.
 

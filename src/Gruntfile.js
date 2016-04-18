@@ -611,7 +611,7 @@ module.exports = function(grunt) {
 		var done = this.async();
 		var codes = {};
 		spawnPandoc(function(code) {codes.en = code; if (codes.fr !== undefined) {done(codes.en && codes.fr);}}, 'en', volunteerGuideLocation);
-		spawnPandoc(function(code) {codes.fr = code; if (codes.fr !== undefined) {done(codes.en && codes.fr);}}, 'fr', volunteerGuideLocation);
+		spawnPandoc(function(code) {codes.fr = code; if (codes.en !== undefined) {done(codes.en && codes.fr);}}, 'fr', volunteerGuideLocation);
 	});
 	
 	grunt.registerTask('buildDocs', ['concatParentGuide', 'concatVolunteerGuide',

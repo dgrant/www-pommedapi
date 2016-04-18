@@ -21,8 +21,7 @@ list. Those on the waiting list are not required to submit the registration fee 
 until a space has become available.
 
 Most students start at the preschool at the beginning of the school year in September, but
-students may enter the two-day immersion class until December 1, and the three-day
-immersion and both francophone classes until February 1, if space is available.
+students may register for the current school year up until April 1, if space is available.
 The Board may occasionally approve a registration beyond the deadline, determined on a case-by-case
 basis with the approval of the teachers.
 

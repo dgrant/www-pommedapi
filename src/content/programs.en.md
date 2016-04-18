@@ -11,6 +11,8 @@ The two-day immersion program is aimed at children entering their first year of 
 Most of the children will be 32-48 months of age, and activities and language are geared to that
 developmental level. French is introduced, but English is used as necessary.
 
+Children should be 3 years old on December 31 of the school year in which they are registered. If they are 4 years old by December 31, they must register in the three-day immersion program.
+
 ## Three-day immersion program
 
 The three-day immersion program is aimed at children progressing from the two-day
