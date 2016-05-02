@@ -1,7 +1,7 @@
 \newpage
 
 ---
-title: Parent Guide 2015-2016
+title: Parent Guide 2016-2017
 subtitle: Prématernelle Pomme D'Api
 ...
 
@@ -242,12 +242,12 @@ the Registrar in writing prior to August 1 to receive a refund of the tuition de
 You must also provide the following post-dated cheques:
 
 * Two $25 deposit cheques for parent meetings, post-dated May 1 and September 1 of
-the year your child starts his or her program (for example, May 1, 2015 and September
-1, 2015 for the 2015-2016 school year).  
+the year your child starts his or her program (for example, May 1, 2016 and September
+1, 2016 for the 2016-2017 school year).  
 _Parent meeting cheques will be returned upon attendance at each parent meeting.
 Otherwise they will be cashed. Child care is provided during parent meetings._
 * One $200 deposit cheque for parent participation, post-dated July 1 of the year your
-child’s program ends (for example, July 1, 2016 for the 2015-2016 school year).  
+child’s program ends (for example, July 1, 2017 for the 2016-2017 school year).  
 _This cheque will be destroyed if your family contributes at least 25 volunteer hours by
 June 30. Otherwise it will be cashed._
 * Nine post-dated cheques covering tuition from September 1 to May 1 (June’s tuition will
@@ -650,7 +650,7 @@ Director.
 
 Everybody who is not on the elected Board will be assigned to one or more non-elected
 volunteer positions at the beginning of the school year. These are Pomme d’Api’s non-elected
-volunteer positions for 2015-2016:
+volunteer positions for 2016-2017:
 
 * class representative
 * classroom cleaners
@@ -732,7 +732,7 @@ detail.
 
 ### Executive Board Positions
 
-These are Pomme d’Api’s executive Board positions for 2015-2016:
+These are Pomme d’Api’s executive Board positions for 2016-2017:
 
 * President
 * Vice President
@@ -1076,7 +1076,7 @@ Let us all contribute to making this experience an enriching one for our childre
 
 # Appendix A: Current Executive Board Positions
 
-Below is a list of current Board positions for 2015-2016. This can change from year to year as
+Below is a list of current Board positions for 2016-2017. This can change from year to year as
 the needs of the preschool evolve over time, although the Board must always have a President,
 Vice President, Secretary, and Treasurer.
 

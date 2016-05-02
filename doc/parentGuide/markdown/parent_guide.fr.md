@@ -1,7 +1,7 @@
 \newpage
 
 ---
-title: Guide des parents 2015-2016
+title: Guide des parents 2016-2017
 subtitle: Prématernelle Pomme D'Api
 ...
 
@@ -175,9 +175,9 @@ _Si vous changez d’avis et vous ne voulez plus enregistrer votre enfant à Pom
 
 Vous devez aussi fournir les chèques postdatés suivants:
 
-* Deux chèques d’acompte de $25 pour les réunions de parents, postdatés le 1er mai et le 1er septembre de l'année quand votre enfant commence son programme (par exemple, le 1er mai, 2015 et le 1er septembre, 2015 pour l'année scolaire 2015-2016).  
+* Deux chèques d’acompte de $25 pour les réunions de parents, postdatés le 1er mai et le 1er septembre de l'année quand votre enfant commence son programme (par exemple, le 1er mai, 2016 et le 1er septembre, 2016 pour l'année scolaire 2016-2017).  
 _Les chèques pour les réunions de parents seront retournés si vous venez aux réunions, sinon ils seront encaissés. Un service de garderie est prévu pour les enfants pendant les réunions._
-* Un chèque de $200 pour la participation des parents, postdaté le 1er juillet de l'année quand le programme de votre enfant se termine (par exemple, le 1er juillet, 2016 pour l'année scolaire 2015-2016).  
+* Un chèque de $200 pour la participation des parents, postdaté le 1er juillet de l'année quand le programme de votre enfant se termine (par exemple, le 1er juillet, 2017 pour l'année scolaire 2016-2017).  
 _Ce chèque va être détruit si votre famille a contribué au moins 25 heures de bénévolat au 30 juin. Si non le chèque va être encaissé._
 * Neuf chèques postdatés pour payer pour les frais scolaires du 1er septembre au 1er mai (les frais de juin sont payés avec le chèque pour l’acompte des frais scolaires)
 
@@ -442,7 +442,7 @@ Si vous avez besoin d'aide pour trouver des tâches de bénévolat, veuillez con
 
 ## Les postes bénévoles non-élus
 
-Chaque personne qui n'est pas sur le conseil d'administration se fera assigner un poste de bénévolat au début de l'année scolaire. Voici la liste des postes de bénévolat non-élus pour 2015-2016:
+Chaque personne qui n'est pas sur le conseil d'administration se fera assigner un poste de bénévolat au début de l'année scolaire. Voici la liste des postes de bénévolat non-élus pour 2016-2017:
 
 * comptabilité
 * représentant(e) de classe pour la participation des parents
@@ -509,7 +509,7 @@ Les réunions du conseil sont résumées dans les contes rendus qui sont distrib
 
 ### Postes au Conseil d’administration (C.A.)
 
-Voici les postes du Conseil d’administration de Pomme d'api pour l’année 2015-2016:
+Voici les postes du Conseil d’administration de Pomme d'api pour l’année 2016-2017:
 
 * Président(e)
 * Vice-Président(e)
@@ -738,7 +738,7 @@ Contribuons tous ensemble à créer dans notre école Pomme d'api une expérienc
 
 # Annexe A: Postes au Conseil d’Administration (C.A.)
 
-Vous trouverez ci-joint la liste et descriptions de tâches des postes au Conseil d’Administration pour l’année 2015-2016. Ces postes peuvent changer d’année en année selon les besoins de l’école prématernelle qui change et évolue avec le temps. Cependant le conseil d’Administration doit toujours avoir un(e) Président(e ), un(e) Vice-Président(e), un(e) secrétaire et un(e) trésorier(ère).
+Vous trouverez ci-joint la liste et descriptions de tâches des postes au Conseil d’Administration pour l’année 2016-2017. Ces postes peuvent changer d’année en année selon les besoins de l’école prématernelle qui change et évolue avec le temps. Cependant le conseil d’Administration doit toujours avoir un(e) Président(e ), un(e) Vice-Président(e), un(e) secrétaire et un(e) trésorier(ère).
 
 ## Président(e)
 
