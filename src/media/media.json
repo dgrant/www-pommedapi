@@ -29,6 +29,12 @@
 		"en": "Policy Manual (English)",
 		"fr": "Guide des politiques (anglais)"
 	},
+	"policy_manual_fr": {
+		"path": "Pomme_dApi_Policy_Manual_April_2016.pdf",
+		"icon": "pdf",
+		"en": "Policy Manual (English)",
+		"fr": "Guide des politiques (anglais)"
+	},
 	"volunteer_guide_en": {
 		"path": "volunteer_guide.en.pdf",
 		"icon": "pdf",
@@ -46,5 +52,23 @@
 		"icon": "pdf",
 		"en": "Pomme d'Api Constitution (English)",
 		"fr": "Constitution de Pomme d'Api (anglais)"
+	},
+	"constitution_fr": {
+		"path": "PommeDApiConstitution.pdf",
+		"icon": "pdf",
+		"en": "Pomme d'Api Constitution (English)",
+		"fr": "Constitution de Pomme d'Api (anglais)"
+	},
+	"expense_reimbursement_en": {
+		"path": "Expense_Reimbursement_Form.pdf",
+		"icon": "pdf",
+		"en": "Expense Reimbursement Form (English)",
+		"fr": "Constitution de Pomme d'Api (anglais)"
+	},
+	"expense_reimbursement_fr": {
+		"path": "Expense_Reimbursement_Form.pdf",
+		"icon": "pdf",
+		"en": "Expense Reimbursement Form (English)",
+		"fr": "Frais formulaire de remboursement (anglais)"
 	}
 }
