@@ -28,6 +28,6 @@
 		]},
 		{"page": "www/contact", "en": "Contact us", "fr": "Contactez-nous"},
 		{"page": "www/location", "en": "Find us", "fr": "Nous trouver"},
-        {"page": "form", "hidden": true}
+        {"page": "participation-form", "hidden": true}
 	]
 }
