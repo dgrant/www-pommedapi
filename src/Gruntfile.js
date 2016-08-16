@@ -130,6 +130,9 @@ module.exports = function(grunt) {
 			if (parentPage && (parentPageId === pageId)) {
 				css.push('active-group');
 			}
+            if (page.hidden) {
+                return;
+            }
 			var flattenedPage = page.page.split('/').pop();
 			html += (css.length ? '<li class="'+css.join(' ')+'">' : '<li>');
 			html += '<a href="' + flattenedPage + '.html">'+page[language]+'</a>';

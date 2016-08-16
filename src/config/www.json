@@ -27,6 +27,7 @@
 			{"page": "calender", "en": "Calendar", "fr": "Calendrier"}
 		]},
 		{"page": "www/contact", "en": "Contact us", "fr": "Contactez-nous"},
-		{"page": "www/location", "en": "Find us", "fr": "Nous trouver"}
+		{"page": "www/location", "en": "Find us", "fr": "Nous trouver"},
+        {"page": "form", "hidden": true}
 	]
 }
