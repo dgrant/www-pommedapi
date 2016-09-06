@@ -1,6 +1,6 @@
 # Pré-maternelle Pomme d'Api
 
-**Les places sont disponibles dans les programmes d'immersion et francophones!**
+**Update (2016/09/05) Les places sont disponibles dans les programmes d'immersion et francophones!**
 
 ## À propos de Pomme d'Api
 

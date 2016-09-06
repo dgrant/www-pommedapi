@@ -1,6 +1,6 @@
 # Pomme d'Api Preschool
 
-**Limited spaces available in both Immersion and Francophone programs!**
+**Update (2016/09/05) Limited spaces available in both Immersion and Francophone programs!**
 
 ## About Pomme d'Api
 
