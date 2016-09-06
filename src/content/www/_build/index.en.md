@@ -1,5 +1,7 @@
 # Pomme d'Api Preschool
 
+**Limited spaces available in both Immersion and Francophone programs!**
+
 ## About Pomme d'Api
 
 Pré-maternelle Pomme d'Api Preschool offers preschool education for children in Vancouver to help foster their social and cognitive development while teaching and encouraging the use of the French language. The preschool caters to families who desire to have their children benefit from the richness of a French Immersion Program, or who are Francophone themselves and need to have their children continue learning in their mother tongue.

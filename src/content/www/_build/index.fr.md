@@ -1,8 +1,6 @@
 # Pré-maternelle Pomme d'Api
 
-## Programme d'été!
-
-{% @asset:summer_program %}
+**Les places sont disponibles dans les programmes d'immersion et francophones!**
 
 ## À propos de Pomme d'Api
 
