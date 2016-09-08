@@ -1,6 +1,6 @@
 # Pomme d'Api Preschool
 
-**Update (2016/09/05) Limited spaces available in both Immersion and Francophone programs!**
+**Update (2016/09/05) There are still spaces available for the French Immersion and Francophone classes! To register or to find out more, please contact registrar.pommedapi@gmail.com**
 
 ## About Pomme d'Api
 

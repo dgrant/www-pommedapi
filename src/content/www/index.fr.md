@@ -1,6 +1,6 @@
 # Pré-maternelle Pomme d'Api
 
-**Update (2016/09/05) Les places sont disponibles dans les programmes d'immersion et francophones!**
+**Update (2016/09/05) Il y a encore des places disponibles dans les classes d'immersion Française et francophone! Pour vous inscrire ou pour tous renseignements, contactez registrar.pommedapi@gmail.com**
 
 ## À propos de Pomme d'Api
 
