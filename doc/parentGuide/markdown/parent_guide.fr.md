@@ -84,10 +84,10 @@ Voici le tableau de l’horaire de classe et les frais de scolarité mensuels po
 \begin{tabularx}{\textwidth}{ *{3}{P} } \hline
 Programme & Horaire & Frais de scolarité mensuel \\
 \hline
-immersion deux jours & mardi, jeudi 9:15-11:45 am & \$170 \\
-immersion trois jours & lundi, mercredi, vendredi 9:15-11:45 am & \$225 \\
-francophone trois jours & lundi, mercredi, vendredi 1:00-3:30 pm & \$225 \\
-francophone quatre jours¹ & lundi, mercredi, jeudi, vendredi 1:00-3:30 pm & \$290 \\
+immersion deux jours & mardi, jeudi 9:15-11:45 am & \$190 \\
+immersion trois jours & lundi, mercredi, vendredi 9:15-11:45 am & \$250 \\
+francophone trois jours & lundi, mercredi, vendredi 1:00-3:30 pm & \$250 \\
+francophone quatre jours¹ & lundi, mercredi, jeudi, vendredi 1:00-3:30 pm & \$320 \\
 \hline \end{tabularx} \endgroup
 ¹ Pour les enfants de quatre ans seulement. En même temps que la classe francophone de trois jours, avec une classe additionnelle les jeudis.
 

@@ -114,10 +114,10 @@ The table below shows the class schedule and monthly fee for each of our four pr
 \begin{tabularx}{\textwidth}{ *{3}{P} } \hline
 Program & Schedule & Monthly fee \\
 \hline
-Two-day immersion & Tuesday, Thursday 9:15-11:45 am & \$170 \\
-Three-day immersion & Monday, Wednesday, Friday 9:15-11:45 am & \$225 \\
-Three-day francophone & Monday, Wednesday, Friday 1:00-3:30 pm & \$225 \\
-Four-day francophone¹ & Monday, Wednesday, Thursday, Friday 1:00-3:30 pm & \$290 \\
+Two-day immersion & Tuesday, Thursday 9:15-11:45 am & \$190 \\
+Three-day immersion & Monday, Wednesday, Friday 9:15-11:45 am & \$250 \\
+Three-day francophone & Monday, Wednesday, Friday 1:00-3:30 pm & \$250 \\
+Four-day francophone¹ & Monday, Wednesday, Thursday, Friday 1:00-3:30 pm & \$320 \\
 \hline \end{tabularx} \endgroup
 ¹ For 4-year-olds only. Overlaps with the three-day francophone class, with an extra class on
 Thursdays.
