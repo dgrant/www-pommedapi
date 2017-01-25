@@ -11,6 +11,12 @@
 		"en": "2017 French Registration Form",
 		"fr": "Demande d’inscription 2017 (français)"
 	},
+  "registration_packet_fillable_en": {
+		"path": "2017_Registration_Contract_Package_fillable.pdf",
+		"icon": "pdf",
+		"en": "2017 Complete Fillable Registration Packet - English",
+		"fr": "Demande d’inscription complète et remplissable 2017 (anglais)"
+	},
 	"parent_guide_en": {
 		"path": "added_by_build",
 		"icon": "pdf",
