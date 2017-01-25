@@ -1,6 +1,6 @@
 # Pré-maternelle Pomme d'Api
 
-**Update (2017/01/18) Recontrez les enseignantes! Visitez la salle de classe! Inscrivez votre enfant pour Septembre 2017!**
+**Update (2017/01/18) VENEZ À NOTRE JOURNÉE PORTES OUVERTES!!! Recontrez les enseignantes! Visitez la salle de classe! Inscrivez votre enfant pour Septembre 2017! La pré-maternelle Pomme d'Api / Le 18 février, 2017, de 9h à 12h**
 
 ## À propos de Pomme d'Api
 

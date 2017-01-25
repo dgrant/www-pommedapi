@@ -1,6 +1,6 @@
 # Pomme d'Api Preschool
 
-**Update (2017/01/18) COME TO OUR OPEN HOUSE!!!  Meet the teachers! Visit the classroom! Register your child for September 2017!**
+**Update (2017/01/18) COME TO OUR OPEN HOUSE!!!  Meet the teachers! Visit the classroom! Register your child for September 2017! Pomme d'Api Preschool / February 18th, 2017, from 9:00 a.m. to 12:00 p.m.**
 
 ## About Pomme d'Api
 
