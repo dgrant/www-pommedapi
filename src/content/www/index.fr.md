@@ -1,6 +1,19 @@
 # Pré-maternelle Pomme d'Api
+<center>
+**Journée portes ouvertes et inscription pour l'année scolaire 2017/2018!**
+</center>
 
-**Update (2017/01/18) VENEZ À NOTRE JOURNÉE PORTES OUVERTES!!! Recontrez les enseignantes! Visitez la salle de classe! Inscrivez votre enfant pour Septembre 2017! La pré-maternelle Pomme d'Api / Le 18 février, 2017, de 9h à 12h**
+<center>
+**18 février 2017, de 9h à midi**
+</center>
+
+<center>
+Venez voir notre école, rencontrer les enseignantes et inscrire votre enfant pour septembre 2017. Des amuse-gueules seront fournis et il y aura des jeux et d'autres surprises pour les enfants.
+</center>
+
+<center>
+Pour plus de renseignements, veuillez contactez le registraire à l'adresse suivante: registrar.pommedapi@gmail.com
+</center>
 
 ## À propos de Pomme d'Api
 
