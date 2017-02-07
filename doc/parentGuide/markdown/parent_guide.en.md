@@ -246,7 +246,7 @@ the year your child starts his or her program (for example, May 1, 2016 and Sept
 1, 2016 for the 2016-2017 school year).  
 _Parent meeting cheques will be returned upon attendance at each parent meeting.
 Otherwise they will be cashed. Child care is provided during parent meetings._
-* One $200 deposit cheque for parent participation, post-dated July 1 of the year your
+* One $300 deposit cheque for parent participation, post-dated July 1 of the year your
 child’s program ends (for example, July 1, 2017 for the 2016-2017 school year).  
 _This cheque will be destroyed if your family contributes at least 25 volunteer hours by
 June 30. Otherwise it will be cashed._
@@ -620,7 +620,7 @@ example, Christmas Concert volunteers, or the Open House committee).
 
 ### Non-Participation policy
 
-When you register your child at Pomme d’Api, you must include a deposit cheque of $200,
+When you register your child at Pomme d’Api, you must include a deposit cheque of $300,
 dated for June 1 of the following year. This cheque will be destroyed if your family contributes at
 least 25 volunteer hours by June 30. If you do not meet this minimum requirement by June 30,
 the cheque will be cashed.

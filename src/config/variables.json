@@ -9,7 +9,7 @@
 	"participationEmailLink": "<a href=\"mailto:participation.pommedapi@gmail.com\">participation.pommedapi@gmail.com</a>",
 	"registrationFee": "$50",
 	"noMeetingPenalty": "$25",
-	"noParticipationPenalty": "$200",
+	"noParticipationPenalty": "$300",
 	"latePickupPenalty": "$50",
 	"minimumParticipationHours": 25,
 	"twoDayImmersionMonthlyFee": "$190",
