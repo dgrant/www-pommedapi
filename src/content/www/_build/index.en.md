@@ -12,7 +12,7 @@ Come see the school, meet the teachers and register your child. Snacks will be p
 </center>
 
 <center>
-For more information see here (link to registration section/package) or contact the Registrar at registrar.pommedapi@gmail.com
+For more information see our [registration page](registration.html) or contact the Registrar at registrar.pommedapi@gmail.com
 </center>
 
 ## About Pomme d'Api
