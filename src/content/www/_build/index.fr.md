@@ -12,7 +12,7 @@ Venez voir notre école, rencontrer les enseignantes et inscrire votre enfant po
 </center>
 
 <center>
-Pour plus de renseignements, voyez notre [page de registration](registration.html) ou veuillez contactez le registraire à l'adresse suivante: registrar.pommedapi@gmail.com
+Pour plus de renseignements, voyez notre [page de registration](registration.html) ou veuillez contactez le registraire à l'adresse suivante: {%registrarEmailLink%}
 </center>
 
 ## À propos de Pomme d'Api
